@@ -124,6 +124,7 @@ pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
 Room_5=df[df.Room_household==5]
+Room_4=df[df.Room_household==4]
 
 pivotday=Room_5.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
 pivotday['Max']=pivotday.idxmax(axis=1)
@@ -175,7 +176,36 @@ vissual = sns.lmplot(data=df, x='weekday', y='Active_kwt',
 pairplot = sns.pairplot(df, vars=['weekday','Active_kwt'])
 
 
+#----------------Corrs for house hold rooms
 
+
+Room_3=df[df.Room_household==3]
+Room_5=df[df.Room_household==5]
+Room_4=df[df.Room_household==4]
+
+
+#correlation showing kwt consumption for household with 3 rooms
+plt.figure(figsize=(10,10))
+plt.title('Active_kwt-day correlation (3 room household)', y=1.05, size=15)
+sns.heatmap(Room_3.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='viridis', linecolor='white', annot=True)
+plt.show()
+#correlation table  kwt-day is correlated 0.14
+
+#correlation showing kwt consumption for household with 4 rooms
+plt.figure(figsize=(10,10))
+plt.title('Active_kwt-day correlation (4 room household)', y=1.05, size=15)
+sns.heatmap(Room_4.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='viridis', linecolor='white', annot=True)
+plt.show()
+#stronger correlations thatn with day, hour are stronger than in the 3 room household
+
+#correlation showing kwt consumption for household with 5 rooms
+plt.figure(figsize=(10,10))
+plt.title('Active_kwt-day correlation (4 room household)', y=1.05, size=15)
+sns.heatmap(Room_5.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='viridis', linecolor='white', annot=True)
+#no correlations due to the fact that there were not enough households
 
 
 
