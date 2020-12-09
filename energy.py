@@ -42,9 +42,7 @@ operations=['mean','sum','min','max']
 kwt_agg=df.groupby(['Year','Month'], as_index=False)[['Active_kwt']].agg(operations)
 print(kwt_agg.reset_index())
 
-#seeing trends per month with violins
-sns.violinplot(x=df["Month"], y=df["Active_kwt"], palette="Blues")
-#plt.show()
+#--------------Graphs---------------------------
 
 #when is the kwt consumption more dense in general?
 fig, ax=plt.subplots(figsize=(6,4))
@@ -67,7 +65,9 @@ plt.ylabel('Active_kwt')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the day in Deceember')
 
+#Midday most consumption
 
+#daytime kwt consumption in December is during midday
 fig, ax=plt.subplots(figsize=(6,4))
 sns.set_style('darkgrid')
 December.groupby('weekday')['Active_kwt'].count().sort_values().plot(kind='bar')
@@ -75,11 +75,11 @@ plt.ylabel('Active_kwt')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the week in Deceember')
 
-
-#Does 2019 mean more electric consumption? answer is yes 
+#Does 2019 mean more electric consumption? 
 df.groupby('Year')['Active_kwt'].sum().plot(kind='bar')
 plt.ylabel('Active_kwt')
 plt.title('2019-2018 comparison')
+#answer is yes 
 
 
 #--------------PIVOTTIONS----------------------
@@ -109,12 +109,13 @@ plt.show()
 #December corrs
 plt.figure(figsize=(8,5))
 sns.heatmap(December.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
-
+#the only corrlation-room numbers and kwt consumption in Dec
 
 #Jan corrs
 January=df[df.Month=='Jan']
 plt.figure(figsize=(8,5))
 sns.heatmap(January.corr(),annot=True,cmap='viridis',mask=np.triu(df.corr(),k=1))
+#the only corrlation-room numbers and kwt consumption in Jan
 
 #whole corr heatmap
 plt.figure(figsize=(10,10))
@@ -143,6 +144,9 @@ vissual = sns.lmplot(data=df, x='weekday', y='Active_kwt',
                  fit_reg=False)
 #the further we move in the week, the more consumption we have 
 
+#since we have a clear behaviour, a pairplot may show it better
+pairplot = sns.pairplot(df, vars=['weekday','Active_kwt'])
+plt.show()
 
 
 
