@@ -103,8 +103,6 @@ pivotday=autumn_season.pivot_table(index='Month',columns='Sales_rev', aggfunc={'
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
-
-
 autumn_Sales=autumn_season[autumn_season.Month=='Nov']
 print(autumn_Sales.tail(4))
 pivotday=autumn_Sales.pivot_table(index='weekday',columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
@@ -114,6 +112,23 @@ print(pivotday)
 #thursday seems highest in scores
 #Nov seems best in autumn season
 
+#aggregations per region
+
+autumn_season=df[df.Season=='autumn']
+print(autumn_season.tail(4))
+pivotday=autumn_season.pivot_table(index=['Month','Client_Room_household.1'],columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+#Arhus is best
+
+winter_months=df[df.Season=='winter']
+print(winter_months.tail(4))
+pivotday=winter_months.pivot_table(index=['Month','Client_Room_household.1'],columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+#Hague, Groningen are best in winter. 
 
 
 
