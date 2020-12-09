@@ -307,3 +307,5 @@ fig = px.density_heatmap(Season, x="weekday", y="Active_kwt", nbinsx=30, nbinsy=
 
 
 
+
+
