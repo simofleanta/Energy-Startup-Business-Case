@@ -25,7 +25,13 @@ print(energy.columns)
 df=DataFrame(energy.head(500))
 print(df.head(500))
 
-energy_s=pd.read_csv('energy_startup.csv')
-print(energy_s.columns)
-df=DataFrame(energy_s.head(500))
-print(df.head(500))
+
+kwt_season=df.groupby(['Season'])[['Active_kwt']]
+print(kwt_season.mean())
+
+kwt_week=df.groupby(['weekday'])[['Active_kwt']]
+print(kwt_week.mean())
+
+
+
+
