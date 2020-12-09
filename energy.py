@@ -20,7 +20,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 import plotly.express as px
 
-c=pd.read_csv('energy.csv')
-print(c.columns)
-df=DataFrame(c.head(500))
+energy=pd.read_csv('energy.csv')
+print(energy.columns)
+df=DataFrame(energy.head(500))
 print(df.head(500))
