@@ -42,11 +42,33 @@ operations=['mean','sum','min','max']
 kwt_agg=df.groupby(['Year','Month'], as_index=False)[['Active_kwt']].agg(operations)
 print(kwt_agg.reset_index())
 
-#seeing trends per h by sorting values per hous 
-
-
+#seeing trends per month with violins
 sns.violinplot(x=df["Month"], y=df["Active_kwt"], palette="Blues")
+#plt.show()
+
+#when is the kwt consumption more dense in general
+
+fig, ax=plt.subplots(figsize=(6,4))
+sns.set_style('darkgrid')
+df.groupby('Day_Time')['Active_kwt'].count().sort_values().plot(kind='bar')
+plt.ylabel('Active_kwt')
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.title('Kwt consumption during the day')
+
+#when is the kwt consumption more dense in month
+December=df[df.Month=='Dec']
+
+fig, ax=plt.subplots(figsize=(6,4))
+sns.set_style('darkgrid')
+December.groupby('Year')['Active_kwt'].count().sort_values().plot(kind='bar')
+plt.ylabel('Active_kwt')
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.title('Kwt consumption during the day in Deceember')
 plt.show()
+
+
+
+
 
 
 
