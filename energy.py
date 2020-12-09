@@ -24,3 +24,8 @@ energy=pd.read_csv('energy.csv')
 print(energy.columns)
 df=DataFrame(energy.head(500))
 print(df.head(500))
+
+energy_s=pd.read_csv('energy_startup.csv')
+print(energy_s.columns)
+df=DataFrame(energy_s.head(500))
+print(df.head(500))
