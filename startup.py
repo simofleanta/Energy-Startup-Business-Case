@@ -25,8 +25,8 @@ import plotly.express as px
 #open file the energy file
 startup=pd.read_csv('energy_startup.csv')
 print(startup.columns)
-df=DataFrame(startup.head(300))
-print(df.head(300))
+df=DataFrame(startup.head(700))
+print(df.head(700))
 
 #I Aggregate revs by house hold rooms
 
@@ -41,9 +41,43 @@ df.groupby(['Client_Room_household','Month'])['Sales_rev'].sum().sort_values().p
 plt.ylabel('Sales_rev')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Sum of sale revenues according to household unit throughout months')
-plt.show()
+
 #it seems that the more rooms a houldhold has, the higher the sales revs.
 #summer autumn seem to have higher scores.
+
+sales_season=df[df.Season=='winter']
+winter_months=sales_season[sales_season.Month=='Dec']
+
+fig, ax=plt.subplots(figsize=(6,4))
+sns.set_style('darkgrid')
+sales_season.groupby(['Client_Room_household','Month'])['Sales_rev'].sum().sort_values().plot(kind='bar')
+plt.ylabel('Sales_rev')
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.title('Sum of sale revenues according to household unit throughout months')
+
+#Mean sales revs in units in the winter season weekdays
+sales_season=df[df.Season=='winter']
+
+fig, ax=plt.subplots(figsize=(6,4))
+sns.set_style('darkgrid')
+sales_season.groupby(['Client_Room_household','weekday'])['Sales_rev'].mean().sort_values().plot(kind='bar')
+plt.ylabel('Sales_rev')
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.title('Mean sale revenues according to household unit throughout winter months')
+
+#aggregation winter weekdays
+
+sales_season=df[df.Season=='winter']
+winter_months=sales_season[sales_season.Month=='Dec']
+
+fig, ax=plt.subplots(figsize=(6,4))
+sns.set_style('darkgrid')
+sales_season.groupby(['Client_Room_household','Month'])['Sales_rev'].sum().sort_values().plot(kind='bar')
+plt.ylabel('Sales_rev')
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.title('Sum of sale revenues according to household unit throughout months')
+
+
 
 
 
