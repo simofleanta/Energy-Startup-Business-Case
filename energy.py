@@ -99,12 +99,41 @@ pivotday=December.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Activ
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
+Room_1=df[df.Room_household==1]
+
+pivotday=Room_1.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+Room_2=df[df.Room_household==2]
+
+pivotday=Room_2.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+Room_3=df[df.Room_household==3]
+
+pivotday=Room_3.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+Room_4=df[df.Room_household==4]
+
+pivotday=Room_4.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+Room_5=df[df.Room_household==5]
+
+pivotday=Room_5.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
 #----------------------CORRELATIONS--per months----------------
 #corr graphs 
 #Watching correlations 
 plt.figure(figsize=(8,5))
 sns.heatmap(df.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
-plt.show()
 
 #December corrs
 plt.figure(figsize=(8,5))
@@ -122,22 +151,20 @@ plt.figure(figsize=(10,10))
 plt.title('Active_kwt - Room', y=1.05, size=15)
 sns.heatmap(df.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
+#correlation table  kwt-rooms
 
-
-#correlation table for December  kwt-rooms
 
 plt.figure(figsize=(10,10))
-plt.title('Active_kwt - Room', y=1.05, size=15)
+plt.title('Active_kwt - Room December', y=1.05, size=15)
 sns.heatmap(December.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
-#Active kwt and rooms correlate
+#Active kwt and rooms correlate december
 
 #Now that these two correlate, a pair plot will show the consumption behaviour 
 pairplot = sns.pairplot(df, vars=['Room_household','Active_kwt'])
-plt.show()
+
 # this shows that the more rooms are ther in house hold the bigger the kwt consumption with an exceptionfor 5 room house holdes,
 #probably because they are not so many with 5 rooms:)
-
 
 #scatters on energy per week
 vissual = sns.lmplot(data=df, x='weekday', y='Active_kwt',
@@ -146,7 +173,12 @@ vissual = sns.lmplot(data=df, x='weekday', y='Active_kwt',
 
 #since we have a clear behaviour, a pairplot may show it better
 pairplot = sns.pairplot(df, vars=['weekday','Active_kwt'])
-plt.show()
+
+
+
+
+
+
 
 
 
