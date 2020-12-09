@@ -115,7 +115,30 @@ plt.show()
 January=df[df.Month=='Jan']
 plt.figure(figsize=(8,5))
 sns.heatmap(January.corr(),annot=True,cmap='viridis',mask=np.triu(df.corr(),k=1))
+
+#whole corr heatmap
+plt.figure(figsize=(10,10))
+plt.title('Active_kwt - Room', y=1.05, size=15)
+sns.heatmap(df.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='viridis', linecolor='white', annot=True)
 plt.show()
+
+#correlation table for December 
+
+plt.figure(figsize=(10,10))
+plt.title('Active_kwt - Room', y=1.05, size=15)
+sns.heatmap(December.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='viridis', linecolor='white', annot=True)
+plt.show()
+#Active kwt and rooms correlate
+
+#scatters on energy per week
+
+vissual = sns.lmplot(data=df, x='weekday', y='Active_kwt',
+                 fit_reg=False)
+plt.show()
+
+#the further we move in the week, the more consumption we have 
 
 
 
