@@ -6,8 +6,6 @@ This is an electric energy consumption analysis for threee regions, Berlin, Gron
 #we are interested to understand the Kwt consumption behaviour not only in different regions but aso in different households, for years 2018-2019
 #Anlyzing the Kwt behaviour accross the units, regions and its seasonality, may help us better understand how we waste energy or we save energy and therefore optimize costs and even be more evironmentally conscous. 
 
-
 #The analysis wil take part in two stages
-
 #-part I - Active Kwt behaviour 
 #-part II - economic startup context 
