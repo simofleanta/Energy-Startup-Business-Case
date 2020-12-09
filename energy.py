@@ -219,6 +219,21 @@ plt.show()
 
 #the later it is the higher is the consumption is 
 #the later in the week the higher the kwt consumption
+#-----------------------Watching kwt in regions
+
+Regional_vissual = sns.lmplot(data=December, x='Region', y='Active_kwt',
+                 fit_reg=False)
+plt.show()
+
+#Amsterdam region got more kwt consumption
+
+Regional_vissual = sns.lmplot(data=Room_4, x='Region', y='Active_kwt',
+                 fit_reg=False)
+plt.show()
+
+
+
+
 
 
 
