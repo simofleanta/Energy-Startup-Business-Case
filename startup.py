@@ -113,22 +113,30 @@ print(pivotday)
 #Nov seems best in autumn season
 
 #aggregations per region
-
 autumn_season=df[df.Season=='autumn']
 print(autumn_season.tail(4))
-pivotday=autumn_season.pivot_table(index=['Month','Client_Room_household.1'],columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday=autumn_season.pivot_table(index=['Month','Client_Region'],columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
-
 #Arhus is best
 
 winter_months=df[df.Season=='winter']
 print(winter_months.tail(4))
-pivotday=winter_months.pivot_table(index=['Month','Client_Room_household.1'],columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday=winter_months.pivot_table(index=['Month','Client_Region'],columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
-
 #Hague, Groningen are best in winter. 
+
+#-----------------------------CORRelations
+
+#correlation showing kwt consumption for household with 3 rooms
+plt.figure(figsize=(10,10))
+plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
+sns.heatmap(winter_months.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='CMRmap', linecolor='white', annot=True)
+plt.show()
+
+
 
 
 

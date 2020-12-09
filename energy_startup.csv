@@ -1,4 +1,4 @@
-Year,Month,Day,Season,weekday,Client_Room_household,Client_Room_household,Number_clients,General_Expenditures,Costs,Sale_frequency,Sales_rev,Month_Profit,Loss
+Year,Month,Day,Season,weekday,Client_Room_household,Client_Region,Number_clients,General_Expenditures,Costs,Sale_frequency,Sales_rev,Month_Profit,Loss
 2019,Jan,1,winter,Sunday,5,Groningen,10,Meetings,1000,10,5000,4000,500
 2019,Jan,2,winter,Monday,5,Groningen,14,Marketing_web,5000,14,7000,2000,500
 2019,Jan,3,winter,Tuesday,5,Groningen,10,Staff,2500,10,5000,2500,500
