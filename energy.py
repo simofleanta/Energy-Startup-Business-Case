@@ -80,12 +80,42 @@ plt.title('Kwt consumption during the week in Deceember')
 df.groupby('Year')['Active_kwt'].sum().plot(kind='bar')
 plt.ylabel('Active_kwt')
 plt.title('2019-2018 comparison')
+
+
+#--------------PIVOTTIONS----------------------
+
+pivotday=df.pivot_table(index='weekday',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+#filter december
+December=df[df.Month=='Dec']
+print(December.tail(4))
+pivotday=December.pivot_table(index='weekday',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+pivotday=December.pivot_table(index='Year',columns='Active_kwt', aggfunc={'Active_kwt':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+#----------------------CORRELATIONS--per months----------------
+#corr graphs 
+#Watching correlations 
+plt.figure(figsize=(8,5))
+sns.heatmap(df.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
 plt.show()
 
+#December corrs
+plt.figure(figsize=(8,5))
+sns.heatmap(December.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
+plt.show()
 
-
-
-
+#Jan corrs
+January=df[df.Month=='Jan']
+plt.figure(figsize=(8,5))
+sns.heatmap(January.corr(),annot=True,cmap='viridis',mask=np.triu(df.corr(),k=1))
+plt.show()
 
 
 
