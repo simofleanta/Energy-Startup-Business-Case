@@ -180,6 +180,8 @@ df = px.data.tips()
 fig = px.density_heatmap(Aarhus, x="weekday", y="Sales_rev", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Monthly profit distribution in weekdays, in Groningen')
 plotly.offline.plot(fig, filename='kwt')
 
+#-----------------------Roi
+
 
 
 
