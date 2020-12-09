@@ -207,6 +207,19 @@ sns.heatmap(Room_5.corr(),linewidths=0.1,vmax=1.0, square=True,
             cmap='viridis', linecolor='white', annot=True)
 #no correlations due to the fact that there were not enough households
 
+#--------------------------Pairplots
+
+#in order to see kwt consumption behavious for rooms with different number of rooms, pairplots will be displyed. 
+
+pairplot = sns.pairplot(Room_4, vars=['Hour','Active_kwt'])
+plt.show()
+
+pairplot = sns.pairplot(Room_3, vars=['Hour','Active_kwt'])
+plt.show()
+
+#the later it is the higher is the consumption is 
+#the later in the week the higher the kwt consumption
+
 
 
 
