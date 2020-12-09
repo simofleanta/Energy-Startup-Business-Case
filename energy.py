@@ -1,5 +1,14 @@
-#you have an app that monitors the electricity - kwtdata
-#you want it to show you how much you save or not 
+
+#We are dealing with a startup that is working on an electric energy monitoring app for households and in the future for businesses 
+# This is an electric energy consumption analysis for threee regions, Berlin, GronIngen and Amsterdam.  
+#the data is taken from an people living in dofferent households, that are using this app 
+#we are interested to understand the Kwt consumption behaviour not only in different regions but aso in different households, for years 2018-2019
+
+#
+
+
+
+
 #you want to it to show the distrib of your app accross the regions and benchmark with another similar app 
 
 import pandas as pd
