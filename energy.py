@@ -109,7 +109,7 @@ plt.show()
 #December corrs
 plt.figure(figsize=(8,5))
 sns.heatmap(December.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
-plt.show()
+
 
 #Jan corrs
 January=df[df.Month=='Jan']
@@ -121,24 +121,30 @@ plt.figure(figsize=(10,10))
 plt.title('Active_kwt - Room', y=1.05, size=15)
 sns.heatmap(df.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
-plt.show()
 
-#correlation table for December 
+
+#correlation table for December  kwt-rooms
 
 plt.figure(figsize=(10,10))
 plt.title('Active_kwt - Room', y=1.05, size=15)
 sns.heatmap(December.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
-plt.show()
 #Active kwt and rooms correlate
 
-#scatters on energy per week
+#Now that these two correlate, a pair plot will show the consumption behaviour 
+pairplot = sns.pairplot(df, vars=['Room_household','Active_kwt'])
+plt.show()
+# this shows that the more rooms are ther in house hold the bigger the kwt consumption with an exceptionfor 5 room house holdes,
+#probably because they are not so many with 5 rooms:)
 
+
+#scatters on energy per week
 vissual = sns.lmplot(data=df, x='weekday', y='Active_kwt',
                  fit_reg=False)
-plt.show()
-
 #the further we move in the week, the more consumption we have 
+
+
+
 
 
 
