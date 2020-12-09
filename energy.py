@@ -233,12 +233,11 @@ pairplot = sns.pairplot(Room_4, vars=['Hour','Active_kwt'])
 
 pairplot = sns.pairplot(Room_3, vars=['Hour','Active_kwt'])
 
+pairplot = sns.pairplot(region_corr, vars=['Region','Active_kwt'])
+plt.show()
 
 #the later it is the higher is the consumption is 
 #the later in the week the higher the kwt consumption
-
-pairplot = sns.pairplot(region_corr, vars=['Region','Active_kwt'])
-plt.show()
 
 
 
