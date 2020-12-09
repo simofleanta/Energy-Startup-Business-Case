@@ -42,6 +42,14 @@ operations=['mean','sum','min','max']
 kwt_agg=df.groupby(['Year','Month'], as_index=False)[['Active_kwt']].agg(operations)
 print(kwt_agg.reset_index())
 
+#seeing trends per h by sorting values per hous 
+
+
+sns.violinplot(x=df["Month"], y=df["Active_kwt"], palette="Blues")
+plt.show()
+
+
+
 
 
 
