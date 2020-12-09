@@ -20,17 +20,31 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 import plotly.express as px
 
+#analysis on two parts, energy, the statup aspects
+
+#ENERGY ASPECT
+
+#open file the energy file
 energy=pd.read_csv('energy.csv')
 print(energy.columns)
 df=DataFrame(energy.head(500))
 print(df.head(500))
 
-
+#Seeing trends by grouping kwt per season ans weekday as well as aggs
 kwt_season=df.groupby(['Season'])[['Active_kwt']]
 print(kwt_season.mean())
 
 kwt_week=df.groupby(['weekday'])[['Active_kwt']]
 print(kwt_week.mean())
+
+#Aggregate
+operations=['mean','sum','min','max']
+kwt_agg=df.groupby(['Year','Month'], as_index=False)[['Active_kwt']].agg(operations)
+print(kwt_agg.reset_index())
+
+
+
+
 
 
 
