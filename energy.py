@@ -212,6 +212,18 @@ sns.heatmap(Room_5.corr(),linewidths=0.1,vmax=1.0, square=True,
             cmap='viridis', linecolor='white', annot=True)
 #no correlations due to the fact that there were not enough households
 
+region_corr=df[['Active_kwt','Region','Season','Room_household']].copy()
+plt.figure(figsize=(10,10))
+plt.title('Region - Active KwT correlations', y=1.05, size=15)
+sns.heatmap(region_corr.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='viridis', linecolor='white', annot=True)
+
+#correlation kwt-rooms  0.39 
+
+#Pairplot
+
+
+
 
 #--------------------------Pairplots
 
@@ -219,12 +231,13 @@ sns.heatmap(Room_5.corr(),linewidths=0.1,vmax=1.0, square=True,
 
 pairplot = sns.pairplot(Room_4, vars=['Hour','Active_kwt'])
 
-
 pairplot = sns.pairplot(Room_3, vars=['Hour','Active_kwt'])
 
 
 #the later it is the higher is the consumption is 
 #the later in the week the higher the kwt consumption
+
+
 
 
 #--------------------REGIONS----Watching kwt behaviour in regions
