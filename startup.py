@@ -129,14 +129,19 @@ print(pivotday)
 
 #-----------------------------CORRelations
 
-#correlation showing kwt consumption for household with 3 rooms
+#correlation showing kwt consumption for household in December 
 plt.figure(figsize=(10,10))
 plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
 sns.heatmap(winter_months.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='CMRmap', linecolor='white', annot=True)
 plt.show()
+#not correlated in december 
 
-
+plt.figure(figsize=(10,10))
+plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
+sns.heatmap(autumn_season.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='CMRmap', linecolor='white', annot=True)
+plt.show()
 
 
 
