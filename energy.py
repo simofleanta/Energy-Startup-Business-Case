@@ -219,7 +219,7 @@ pairplot = sns.pairplot(Room_3, vars=['Hour','Active_kwt'])
 
 #the later it is the higher is the consumption is 
 #the later in the week the higher the kwt consumption
-#-----------------------Watching kwt behaviour in regions
+#--------------------REGIONS----Watching kwt behaviour in regions
 
 Regional_vissual = sns.lmplot(data=December, x='Region', y='Active_kwt',
                  fit_reg=False)
@@ -239,6 +239,28 @@ fig = px.density_heatmap(Room_4, x="Region", y="Active_kwt", nbinsx=30, nbinsy=2
 #In Groningen we have 40 units with 4 rooms consuming 4800  kwt
 #Berlin consumes least. with for rooms 
 
+#Amsterdam kwt in Winter 
+Season=Room_4[Room_4.Season=='winter']
+Amsterdam=Season[Season.Region=='Amsterdam']
+
+#Amsterdam in weekday in 4 room units
+df = px.data.tips()
+fig = px.density_heatmap(Amsterdam, x="weekday", y="Active_kwt", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
+#plotly.offline.plot(fig, filename='kwt')
+
+Berlin=Season[Season.Region=='Berlin'] 
+df = px.data.tips()
+fig = px.density_heatmap(Berlin, x="weekday", y="Active_kwt", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
+#plotly.offline.plot(fig, filename='kwt')
+
+df = px.data.tips()
+fig = px.density_heatmap(Berlin, x="Hour", y="Active_kwt", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
+#plotly.offline.plot(fig, filename='kwt')
+#In Berlin not so many units with 4 rooms but those that are consumme consistently. 
+#in the weekend kwt consumption stays the same but the number consumming that much increases. People are more at home. 
+
+#----------------HOURLY behaviour
+
 # hourly distribution of kwt for 4 rooms household, in winter. 
 
 Season=Room_4[Room_4.Season=='winter']
@@ -251,7 +273,8 @@ fig = px.density_heatmap(Season, x="Hour", y="Active_kwt", nbinsx=30, nbinsy=20,
 Season=Room_4[Room_4.Season=='winter']
 df = px.data.tips()
 fig = px.density_heatmap(Season, x="weekday", y="Active_kwt", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-plotly.offline.plot(fig, filename='kwt')
+#plotly.offline.plot(fig, filename='kwt')
+
 
 
 
