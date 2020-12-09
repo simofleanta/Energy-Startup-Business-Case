@@ -154,13 +154,26 @@ plt.show()
 #not corred.
 
 Client_Region=df[df.Client_Region=='Hague']
-
 plt.figure(figsize=(10,10))
 plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
 sns.heatmap(Client_Region.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='CMRmap', linecolor='white', annot=True)
 plt.show()
 
+#----------------Sales and Profit distributions
+
+df = px.data.tips()
+fig = px.density_heatmap(Client_Region, x="weekday", y="Month_Profit", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Monthly profit distribution in weekdays, in Hague')
+#plotly.offline.plot(fig, filename='kwt')
+
+df = px.data.tips()
+fig = px.density_heatmap(Client_Region, x="weekday", y="Month_Profit", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Monthly profit distribution in weekdays, in Hague')
+#plotly.offline.plot(fig, filename='kwt')
+
+Aarhus_Region=df[df.Client_Region=='Aarhus']
+df = px.data.tips()
+fig = px.density_heatmap(Aarhus_Region, x="weekday", y="Month_Profit", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Monthly profit distribution in weekdays, in Hague')
+plotly.offline.plot(fig, filename='kwt')
 
 
 
