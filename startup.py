@@ -69,6 +69,8 @@ plt.title('Mean sale revenues according to household unit throughout winter mont
 
 sales_season=df[df.Season=='winter']
 winter_months=sales_season[sales_season.Month=='Dec']
+autumn_season=df[df.Season=='autumn']
+autumn_Sales=autumn_season[autumn_season.Month=='Nov']
 
 fig, ax=plt.subplots(figsize=(6,4))
 sns.set_style('darkgrid')
@@ -76,6 +78,47 @@ sales_season.groupby(['Client_Room_household','Month'])['Sales_rev'].sum().sort_
 plt.ylabel('Sales_rev')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Sum of sale revenues according to household unit throughout months')
+
+#-------------PIVOTS
+
+#since autumn winter is highest in scores we will pivot max values for season and months and weekdays  
+
+print(winter_months.tail(4))
+pivotday=winter_months.pivot_table(index='weekday',columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+print(sales_season.tail(4))
+pivotday=sales_season.pivot_table(index='Month',columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+#in winter season Monday is more profitable
+#in winter season most profitable Mar, Feb, December
+
+#autumn season 
+autumn_season=df[df.Season=='autumn']
+print(autumn_season.tail(4))
+pivotday=autumn_season.pivot_table(index='Month',columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+
+
+autumn_Sales=autumn_season[autumn_season.Month=='Nov']
+print(autumn_Sales.tail(4))
+pivotday=autumn_Sales.pivot_table(index='weekday',columns='Sales_rev', aggfunc={'Sales_rev':'max'}).fillna(0)
+pivotday['Max']=pivotday.idxmax(axis=1)
+print(pivotday)
+
+#thursday seems highest in scores
+#Nov seems best in autumn season
+
+
+
+
+
+
 
 
 
