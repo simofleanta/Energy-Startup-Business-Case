@@ -46,8 +46,7 @@ print(kwt_agg.reset_index())
 sns.violinplot(x=df["Month"], y=df["Active_kwt"], palette="Blues")
 #plt.show()
 
-#when is the kwt consumption more dense in general
-
+#when is the kwt consumption more dense in general?
 fig, ax=plt.subplots(figsize=(6,4))
 sns.set_style('darkgrid')
 df.groupby('Day_Time')['Active_kwt'].count().sort_values().plot(kind='bar')
@@ -55,16 +54,34 @@ plt.ylabel('Active_kwt')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the day')
 
-#when is the kwt consumption more dense in month
+#when is the kwt consumption more dense in December
+
+#filter december
 December=df[df.Month=='Dec']
 
+#aggregate data in charts
 fig, ax=plt.subplots(figsize=(6,4))
 sns.set_style('darkgrid')
-December.groupby('Year')['Active_kwt'].count().sort_values().plot(kind='bar')
+December.groupby('Day_Time')['Active_kwt'].count().sort_values().plot(kind='bar')
 plt.ylabel('Active_kwt')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the day in Deceember')
+
+
+fig, ax=plt.subplots(figsize=(6,4))
+sns.set_style('darkgrid')
+December.groupby('weekday')['Active_kwt'].count().sort_values().plot(kind='bar')
+plt.ylabel('Active_kwt')
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.title('Kwt consumption during the week in Deceember')
+
+
+#Does 2019 mean more electric consumption? answer is yes 
+df.groupby('Year')['Active_kwt'].sum().plot(kind='bar')
+plt.ylabel('Active_kwt')
+plt.title('2019-2018 comparison')
 plt.show()
+
 
 
 
