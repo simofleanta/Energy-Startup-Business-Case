@@ -325,7 +325,11 @@ sns.heatmap(z.corr(),linewidths=0.1,vmax=1.0, square=True,
 plt.show()
 
 #quiet many corrs:
-#
+#profitability with client house hold, profitability, sales_rev, roi but not with active kwt
+#active kwt with client room household and roi but, not with sales 
+#sales_rev with client room house, profitability,roi but not with kwt
+#roi with profitability and sales 
+#client room household with kwt, sales and profitability and roi but not with 
 
 
 
