@@ -121,30 +121,6 @@ x=energy_df[['Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales
 #not corr profitability with client householld or very close to being corred
 #overall very weak correlations 
 
-#-------------------MERGE STARTUP ASPECT ANALYSIS AND ENERGY ANALYSIS 
-#PART I+ PARTII =...
-
-#add energy data and merge with x 
-
-energy=pd.read_csv('energy.csv')
-#print(energy.columns)
-df=DataFrame(energy.head(500))
-#print(df.head(500))
-
-#Make copies of dfs to make easier to read it in a table
-x=energy_df[['Year','Month','Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
-y=df[['Year','Month','Active_kwt','Region']].copy()
-
-#merge x+y 
-z=pd.merge(x,y)
-print(z)
-
-
-
-
-
-
-
 
 
 

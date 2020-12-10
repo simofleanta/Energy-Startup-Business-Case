@@ -142,7 +142,7 @@ z['kwh_consumption_cost_month']=z.Active_kwh_month*0.84
 #print the new data frame
 print(z.columns)
 
-#-----------------------------------------------
+#-----------------GRAPH------------------------------
 
 
 #GRAPHS to see an overview of part 1 and 2 
@@ -157,6 +157,19 @@ plt.show()
 #sales with kwh
 #active kwh per month with room number
 #profitability and cost
+
+pairplot = sns.pairplot(z, vars=['Room_household','kwh_consumption_cost_month'])
+plt.show()
+
+#scatters on energy per week
+vissual = sns.lmplot(data=z, x='kwh_consumption_cost_month', y='Sales_rev',
+                 fit_reg=False)
+plt.show()
+#as the monthly consumption decreases, sales revenue increase. Which means that if you customer saves energy theremore money, they'll be likely to 
+#by the app. 
+
+
+
 
 
 
