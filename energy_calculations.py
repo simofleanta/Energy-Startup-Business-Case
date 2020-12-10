@@ -112,6 +112,11 @@ print(energy_df.columns)
 
 #-------------------Merge part 1 and 2 and obtain month consumption calculation
 
+#After calculations, print columns to see calculations added to the dataframe
+print(df.head(5))
+energy_df=df
+print(energy_df.columns)
+
 x=energy_df[['Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
 
 energy=pd.read_csv('energy.csv')
