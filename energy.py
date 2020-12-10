@@ -288,8 +288,6 @@ pairplot = sns.pairplot(Room_3, vars=['Hour','Active_kwh_month'])
 pairplot = sns.pairplot(region_corr, vars=['Region','Active_kwh_month'])
 plt.show()
 
-
-
 #--------------------REGIONS----Watching kwt behaviour in regions
 
 Regional_vissual = sns.lmplot(data=December, x='Region', y='Active_kwh_month',
@@ -346,39 +344,6 @@ Season=Room_4[Room_4.Season=='winter']
 df = px.data.tips()
 fig = px.density_heatmap(Season, x="weekday", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
 plotly.offline.plot(fig, filename='kwt')
-
-#-------------------Merge part 1 and 2 and obtain month consumption calculation
-
-#After calculations, print columns to see calculations added to the dataframe
-print(df.head(5))
-energy_df=df
-print(energy_df.columns)
-
-x=energy_df[['Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
-
-energy=pd.read_csv('energy.csv')
-#print(energy.columns)
-df=DataFrame(energy.head(500))
-#print(df.head(500))
-
-#Make copies of dfs to make easier to read it in a table
-x=energy_df[['Year','Day','Month','Profitablity','ROI_2019','ROI_2018','Sales_rev']].copy()
-y=df[['Year','Month','Kwh','Active_kwh_month','Room_household','Region']].copy()
-
-#merge x+y 
-z=pd.merge(x,y)
-print(z)
-
-#--------------------------------COST CALCULATIONS per month
-#price = kWh × cost per kWh
-#price = 97.2 kWh × .50
-#kWh = 48.6
-
-z['kwh_consumption_cost_month']=z.Active_kwh_month*0.84
-
-#print the new data frame
-print(z.columns)
-
 
 
 

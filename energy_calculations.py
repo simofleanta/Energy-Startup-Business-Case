@@ -140,7 +140,12 @@ print(z)
 z['kwh_consumption_cost_month']=z.Active_kwh_month*0.84
 
 #print the new data frame
-print(z.columns)
+print(z.head(20))
+
+
+
+
+
 
 
 
