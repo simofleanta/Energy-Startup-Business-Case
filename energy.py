@@ -102,12 +102,18 @@ ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the week in Deceember')
 plt.show()
 
-
 #Does 2019 mean more electric consumption? 
 df.groupby('Year')['Active_kwh_month'].sum().plot(kind='bar')
 plt.ylabel('Active_kwh_month')
 plt.title('2019-2018 comparison')
-#answer is yes 
+plt.show()
+
+#Does 2019 mean more kwh consumption? 
+df.groupby('Year')['Kwh'].sum().plot(kind='bar')
+plt.ylabel('Active_kwh_month')
+plt.title('2019-2018 comparison')
+plt.show()
+#answer is yes but2018 modre dense. 
 
 """
 #--------------PIVOTTIONS----------------------
