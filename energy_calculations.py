@@ -119,7 +119,7 @@ df=DataFrame(energy.head(500))
 
 #Make copies of dfs to make easier to read it in a table
 x=energy_df[['Year','Day','Month','Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
-y=df[['Year','Month','Active_kwt','Region']].copy()
+y=df[['Year','Month','Kwh','Region']].copy()
 
 #merge x+y 
 z=pd.merge(x,y)
@@ -150,6 +150,9 @@ print(z)
 #price = kWh × cost per kWh
 #price = 97.2 kWh × .50
 #kWh = 48.6
+z['kwh_consumption_cost']=z.Kwh*0.5
+
+
 
 
 
