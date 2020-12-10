@@ -105,6 +105,9 @@ df['ROI_2018']=net_profit18/investment*100
 
 #After calculations, print columns to see calculations added to the dataframe
 print(df.head(5))
+energy_df=df
+print(energy_df.columns)
+
 
 
 

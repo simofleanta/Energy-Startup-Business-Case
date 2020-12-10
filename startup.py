@@ -227,51 +227,46 @@ print(ROI_dec(investment_dec,costs_dec,loss_dec))
 
 #2018 YEAR ROI
 #filtering the year
-
 investment=70000
 year2018=df[df.Year==2018]
 
 #netprofit calculation
 net_profit18=costs*12-loss
 
+#set costs and loss
 Costs=Costs=year2018['Costs']
 Loss=Loss=year2018['Loss']
 
+
+#generate function roi
 def generateROI(investment,Costs,Loss):
     """function generating ROI for 2018"""
     return net_profit18/investment*100
 print(generateROI(investment,Costs,Loss))
 
-#roi in dec 2018
+#-------------------------------------------------
 
-#netprofit calculation
-net_profit18=costs*12-loss
+#roi in December month
 
-Costs=Costs=year2018['Costs']
-Loss=Loss=year2018['Loss']
-
-def generateROI(investment,Costs,Loss):
-    """function generating ROI for 2018"""
-    return net_profit18/investment*100
-print(generateROI(investment,Costs,Loss))
-
+#extract month
 Month2018=df[df.Month=='Dec']
 
+#set costs and loss
 Costs_18=Costs=Month2018['Costs']
 Loss_18=Loss=Month2018['Loss']
 
 #netprofit calculation DEC 18
 net_profit18_dec=Costs_18*12-Loss_18
 
+#roi function
 def generateROI_dec18(investment,Costs,Loss):
     """function generating ROI for dec 2018"""
     return net_profit18_dec/investment*100
 print(generateROI_dec18(investment,Costs_18,Loss_18))
 
-#calculate profitability 
+#---------------------------------------------------------------------
 
-#profitability 
-
+#calculate profitability
 
 df['Cost_to_produce']=4000*df.Sale_frequency
 df['Profitablity']=df.Cost_to_produce-df.Sales_rev
@@ -285,6 +280,7 @@ df['ROI_2018']=net_profit18/investment*100
 print(df.head(5))
 energy_df=df
 print(energy_df.columns)
+
 
 
 
