@@ -46,17 +46,19 @@ def generateROI(investment,costs,loss):
 print(generateROI(investment,costs,loss))
 
 #see roi per month 
+Month2019=df[df.Month=='Dec']
+investment_dec=89000
 
-costs_dec=Costs=year2019['Costs']
-loss_dec=Loss=year2019['Loss']
+costs_dec=Costs=Month2019['Costs']
+loss_dec=Loss=Month2019['Loss']
 
 net_p_dec=costs_dec*12-loss_dec
 print(net_p_dec)
 
-def ROI_dec(investment,costs_dec,loss_dec):
+def ROI_dec(investment_dec,costs_dec,loss_dec):
     """function generating ROI for 2019"""
-    return net_p_dec/investment*100
-print(ROI_dec(investment,costs_dec,loss_dec))
+    return net_p_dec/investment_dec*100
+print(ROI_dec(investment_dec,costs_dec,loss_dec))
 
 #2018 ROI
 #filtering the year
