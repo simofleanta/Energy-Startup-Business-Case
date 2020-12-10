@@ -140,17 +140,22 @@ z=pd.merge(x,y)
 print(z)
 
 #perform correlations between business analysis and energy 
-plt.figure(figsize=(10,10))
-plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
-sns.heatmap(z.corr(),linewidths=0.1,vmax=1.0, square=True, 
-            cmap='CMRmap', linecolor='white', annot=True)
+#plt.figure(figsize=(10,10))
+#plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
+#sns.heatmap(z.corr(),linewidths=0.1,vmax=1.0, square=True, 
+        #    cmap='CMRmap', linecolor='white', annot=True)
 
 
+#pairplot = sns.pairplot(z, vars=['Client_Room_household','Active_kwt'])
+#plt.show()
+#the higher the number of rooms a client has , the more energy consumes.
 
+#=> a stronger profitability of the app
+#pairplot = sns.pairplot(z, vars=['Profitablity','Client_Room_household'])
+#plt.show()
 
-
-
-
+pairplot = sns.pairplot(z, vars=['Profitablity','Client_Room_household'])
+#plt.show()
 
 
 
