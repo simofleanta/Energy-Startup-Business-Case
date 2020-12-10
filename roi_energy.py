@@ -93,6 +93,27 @@ def generateROI_dec18(investment,Costs,Loss):
     return net_profit18_dec/investment*100
 print(generateROI_dec18(investment,Costs_18,Loss_18))
 
+#-------------------------------------------------------------------------
+
+#profitability 
+
+
+df['Cost_to_produce']=4000*df.Sale_frequency
+df['Profitablity']=df.Cost_to_produce-df.Sales_rev
+df['ROI_2019']=net_profit19/investment*100
+df['ROI_2018']=net_profit18/investment*100
+
+#After calculations, print columns to see calculations added to the dataframe
+print(df.head(5))
+
+
+
+
+
+
+
+
+
 
 
 

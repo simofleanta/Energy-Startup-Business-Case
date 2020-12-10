@@ -225,7 +225,7 @@ def ROI_dec(investment_dec,costs_dec,loss_dec):
 print(ROI_dec(investment_dec,costs_dec,loss_dec))
 
 
-#2018 ROI
+#2018 YEAR ROI
 #filtering the year
 
 investment=70000
@@ -260,7 +260,7 @@ Month2018=df[df.Month=='Dec']
 Costs_18=Costs=Month2018['Costs']
 Loss_18=Loss=Month2018['Loss']
 
-#netprofit calculation
+#netprofit calculation DEC 18
 net_profit18_dec=Costs_18*12-Loss_18
 
 def generateROI_dec18(investment,Costs,Loss):
@@ -270,11 +270,23 @@ print(generateROI_dec18(investment,Costs_18,Loss_18))
 
 #calculate profitability 
 
+#profitability 
 
 
+df['Cost_to_produce']=4000*df.Sale_frequency
+df['Profitablity']=df.Cost_to_produce-df.Sales_rev
+df['ROI_2019']=net_profit19/investment*100
+df['ROI_2018']=net_profit18/investment*100
 
 #subset with roi so I can decide whether to use the energy app for more rooms husehold. 
 #so after subsetting, will try a corr between roi and sales or househlds
+
+#After calculations, print columns to see calculations added to the dataframe
+print(df.head(5))
+energy_df=df
+print(energy_df.columns)
+
+
 
 
 
