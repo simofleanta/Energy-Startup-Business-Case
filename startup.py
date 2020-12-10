@@ -174,15 +174,28 @@ plotly.offline.plot(fig, filename='kwt')
 
 df = px.data.tips()
 fig = px.density_heatmap(g, x="weekday", y="Month_Profit", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Monthly profit distribution in weekdays, in Groningen')
-plotly.offline.plot(fig, filename='kwt')
+#plotly.offline.plot(fig, filename='kwt')
 
 df = px.data.tips()
 fig = px.density_heatmap(Aarhus, x="weekday", y="Sales_rev", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Monthly profit distribution in weekdays, in Groningen')
-plotly.offline.plot(fig, filename='kwt')
+#plotly.offline.plot(fig, filename='kwt')
 
 #-----------------------Roi
 
 
+#After seeing correlations and the max, means values pivots, we can now see the ROI on different months or seasons, keeping in mind that sales 
+#sale revenues increase autumn winter. 
+
+#2019 ROI
+#filtering the year
+
+startup=pd.read_csv('energy_startup.csv')
+print(startup.columns)
+df=DataFrame(startup.head(700))
+print(df.head(700))
+
+year2019=df[df.Year==2019]
+print(year2019)
 
 
 
