@@ -331,6 +331,14 @@ plt.show()
 #roi with profitability and sales 
 #client room household with kwt, sales and profitability and roi but not with 
 
+#pairplots for correlation understanding
+
+#the app should make client understand not only how much kwt are active during evening or end of the week
+# /month, but also how much energy they could save. 
+# figure out a for that calculation now that the data was merged into z df.
+
+
+
 
 
 
