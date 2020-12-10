@@ -362,3 +362,5 @@ pairplot = sns.pairplot(z, vars=['Profitablity','Client_Room_household'])
 
 
 
+
+
