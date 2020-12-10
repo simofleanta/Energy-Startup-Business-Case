@@ -53,15 +53,27 @@ df=DataFrame(energy.head(500))
 print(df.head(500))
 
 #Seeing trends by grouping kwt per season ans weekday as well as aggs
-kwt_season=df.groupby(['Season'])[['Active_kwh_month']]
+
+#mean kwh in a season 
+#mean kwh/mnth in a month
+kwt_season=df.groupby(['Month','Season'])[['Active_kwh_month', 'Kwh']]
 print(kwt_season.mean())
 
-kwt_week=df.groupby(['weekday'])[['Active_kwh_month']]
+kwt_week=df.groupby(['weekday'])[['Kwh']]
 print(kwt_week.mean())
+
+#sum of kwh/hour in a weekday keeping in mind that appliances are kept on 6.5 h a day for room 5 unit
+room5=df[df.Room_household==5]
+kwt_week=room5.groupby(['weekday'])[['Kwh']]
+print(kwt_week.sum())
+
+room2=df[df.Room_household==2]
+kwt_week=room2.groupby(['weekday'])[['Kwh']]
+print(kwt_week.sum())
 
 #Aggregate
 operations=['mean','sum','min','max']
-kwt_agg=df.groupby(['Year','Month'], as_index=False)[['Active_kwh_month']].agg(operations)
+kwt_agg=df.groupby(['Year','Month'], as_index=False)[['Kwh']].agg(operations)
 print(kwt_agg.reset_index())
 
 #--------------Graphs---------------------------
