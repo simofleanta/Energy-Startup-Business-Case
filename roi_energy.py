@@ -47,7 +47,7 @@ print(generateROI(investment,costs,loss))
 #2018 ROI
 #filtering the year
 
-investment=100000
+investment=70000
 year2018=df[df.Year==2018]
 
 #netprofit calculation
