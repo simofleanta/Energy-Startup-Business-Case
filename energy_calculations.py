@@ -140,7 +140,25 @@ print(z)
 z['kwh_consumption_cost_month']=z.Active_kwh_month*0.84
 
 #print the new data frame
-print(z.head(20))
+print(z.columns)
+
+#-----------------------------------------------
+
+
+#GRAPHS to see an overview of part 1 and 2 
+
+plt.figure(figsize=(8,5))
+sns.heatmap(z.corr(),annot=True,cmap='Blues_r',mask=np.triu(z.corr(),k=1))
+plt.show()
+
+#there significant corrs
+#profitability sales
+#cost per month with room
+#sales with kwh
+#active kwh per month with room number
+#profitability and cost
+
+
 
 
 
