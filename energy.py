@@ -165,32 +165,52 @@ pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
 
-"""
+
 #----------------------CORRELATIONS--per months----------------
 #corr graphs 
 #Watching correlations 
 plt.figure(figsize=(8,5))
 sns.heatmap(df.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
+plt.show()
+#region with kwh
+#kwh household and kwh per month
+
 
 #December corrs
 plt.figure(figsize=(8,5))
 sns.heatmap(December.corr(),annot=True,cmap='Blues_r',mask=np.triu(df.corr(),k=1))
-#the only corrlation-room numbers and kwt consumption in Dec
+plt.show()
+#region with kwh
+#kwh household and kwh per month
+#kwh with day
+
 
 #Jan corrs
 January=df[df.Month=='Jan']
 plt.figure(figsize=(8,5))
 sns.heatmap(January.corr(),annot=True,cmap='viridis',mask=np.triu(df.corr(),k=1))
-#the only corrlation-room numbers and kwt consumption in Jan
+plt.show()
+#region with kwh
+#kwh household and kwh per month
+#kwh year not with day
 
 #whole corr heatmap
 plt.figure(figsize=(10,10))
 plt.title('Active_kwh_month - Room', y=1.05, size=15)
 sns.heatmap(df.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
+plt.show()
+#region with kwh
+#kwh household and kwh per month
+#region with number of rooms 
+#kw with number of rooms 
+#day corred with h
+#day with active per mth but not with kwh
+
+
 #correlation table  kwt-rooms
 
-
+"""
 plt.figure(figsize=(10,10))
 plt.title('Active_kwh_month - Room December', y=1.05, size=15)
 sns.heatmap(December.corr(),linewidths=0.1,vmax=1.0, square=True, 
