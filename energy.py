@@ -67,6 +67,7 @@ room5=df[df.Room_household==5]
 kwt_week=room5.groupby(['weekday'])[['Kwh']]
 print(kwt_week.sum())
 
+#sum of kwh/hour in a weekday keeping in mind that appliances are kept on 6.5 h a day for room 2 unit
 room2=df[df.Room_household==2]
 kwt_week=room2.groupby(['weekday'])[['Kwh']]
 print(kwt_week.sum())
@@ -81,10 +82,12 @@ print(kwt_agg.reset_index())
 #when is the kwt consumption more dense in general?
 fig, ax=plt.subplots(figsize=(6,4))
 sns.set_style('darkgrid')
-df.groupby('Day_Time')['Active_kwh_month'].count().sort_values().plot(kind='bar')
-plt.ylabel('Active_kwh_month')
+df.groupby('Day_Time')['Kwh'].count().sort_values().plot(kind='line')
+plt.ylabel('Kwh')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
-plt.title('Kwt consumption during the day')
+plt.title('Kwh consumption during the day')
+plt.show()
+
 
 #when is the kwt consumption more dense in December
 
