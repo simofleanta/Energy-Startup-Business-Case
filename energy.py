@@ -90,7 +90,7 @@ December.groupby('Day_Time')['Kwh'].count().sort_values().plot(kind='line')
 plt.ylabel('Active_kwh_month')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the day in Deceember')
-plt.show()
+
 #Midday most consumption as it gets darker earlier 
 
 #daytime kwt consumption in December is during midday
@@ -100,32 +100,32 @@ December.groupby('weekday')['Active_kwh_month'].count().sort_values().plot(kind=
 plt.ylabel('Active_kwh_month')
 ax.get_yaxis().get_major_formatter().set_scientific(False)
 plt.title('Kwt consumption during the week in Deceember')
-plt.show()
+
 
 #Does 2019 mean more electric consumption? 
 df.groupby('Year')['Active_kwh_month'].sum().plot(kind='bar')
 plt.ylabel('Active_kwh_month')
 plt.title('2019-2018 comparison')
-plt.show()
+
 
 #Does 2019 mean more kwh consumption? 
 df.groupby('Year')['Kwh'].sum().plot(kind='bar')
 plt.ylabel('Active_kwh_month')
 plt.title('2019-2018 comparison')
-plt.show()
+
 #answer is yes but2018 modre dense. 
 
-"""
+
 #--------------PIVOTTIONS----------------------
 
-pivotday=df.pivot_table(index='weekday',columns='Active_kwh_month', aggfunc={'Active_kwh_month':'max'}).fillna(0)
+pivotday=df.pivot_table(index='weekday',columns='Kwh', aggfunc={'Kwh':'max'}).fillna(0)
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
 #filter december
 December=df[df.Month=='Dec']
 print(December.tail(4))
-pivotday=December.pivot_table(index='weekday',columns='Active_kwh_month', aggfunc={'Active_kwh_month':'max'}).fillna(0)
+pivotday=December.pivot_table(index='weekday',columns='Kwh', aggfunc={'Kwh':'max'}).fillna(0)
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
@@ -135,7 +135,7 @@ print(pivotday)
 
 Room_1=df[df.Room_household==1]
 
-pivotday=Room_1.pivot_table(index='Year',columns='Active_kwh_month', aggfunc={'Active_kwh_month':'max'}).fillna(0)
+pivotday=Room_1.pivot_table(index='Year',columns='Kwh', aggfunc={'Kwh':'max'}).fillna(0)
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
@@ -164,6 +164,8 @@ pivotday=Room_5.pivot_table(index='Year',columns='Active_kwh_month', aggfunc={'A
 pivotday['Max']=pivotday.idxmax(axis=1)
 print(pivotday)
 
+
+"""
 #----------------------CORRELATIONS--per months----------------
 #corr graphs 
 #Watching correlations 
