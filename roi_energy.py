@@ -108,13 +108,12 @@ print(df.head(5))
 energy_df=df
 print(energy_df.columns)
 
-x=energy_df[['Profitablity','ROI_2019','Client_Room_household','Sales_rev']].copy()
+x=energy_df[['Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
 
-plt.figure(figsize=(10,10))
-plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
-sns.heatmap(x.corr(),linewidths=0.1,vmax=1.0, square=True, 
-            cmap='CMRmap', linecolor='white', annot=True)
-plt.show()
+#plt.figure(figsize=(10,10))
+#plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
+#sns.heatmap(x.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            #cmap='CMRmap', linecolor='white', annot=True)
 
 #profitability with corr 0.054
 #roi client household   0.0092
@@ -122,6 +121,33 @@ plt.show()
 #not corr profitability with client householld or very close to being corred
 #overall very weak correlations 
 
+#-------------------MERGE STARTUP ASPECT ANALYSIS AND ENERGY ANALYSIS 
+#PART I+ PARTII =...
+
+#add energy data and merge with x 
+
+energy=pd.read_csv('energy.csv')
+#print(energy.columns)
+df=DataFrame(energy.head(500))
+#print(df.head(500))
+
+#Make copies of dfs to make easier to read it in a table
+x=energy_df[['Year','Month','Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
+y=df[['Year','Month','Active_kwt','Region']].copy()
+
+#merge x+y 
+z=pd.merge(x,y)
+print(z)
+
+#perform correlations between business analysis and energy 
+plt.figure(figsize=(10,10))
+plt.title('Sales_rev- Client_Room_household', y=1.05, size=15)
+sns.heatmap(z.corr(),linewidths=0.1,vmax=1.0, square=True, 
+            cmap='CMRmap', linecolor='white', annot=True)
+plt.show()
+
+#quiet many corrs:
+#
 
 
 
