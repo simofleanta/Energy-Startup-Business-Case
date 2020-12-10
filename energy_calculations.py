@@ -158,6 +158,8 @@ plt.show()
 #active kwh per month with room number
 #profitability and cost
 
+#Getting inside the correlation using dots :)
+
 pairplot = sns.pairplot(z, vars=['Room_household','kwh_consumption_cost_month'])
 plt.show()
 
@@ -167,6 +169,14 @@ vissual = sns.lmplot(data=z, x='kwh_consumption_cost_month', y='Sales_rev',
 plt.show()
 #as the monthly consumption decreases, sales revenue increase. Which means that if you customer saves energy theremore money, they'll be likely to 
 #by the app. 
+
+vissual = sns.lmplot(data=z, x='kwh_consumption_cost_month', y='Profitablity',
+                 fit_reg=False)
+plt.show()
+#as the monthly consumption decreases, profitability increase. Which means that if you customer saves energy theremore money, they'll be likely to 
+#by the app. 
+#need to to consider ways to help custommers save energy
+
 
 
 
