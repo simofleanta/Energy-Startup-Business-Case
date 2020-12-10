@@ -125,31 +125,32 @@ y=df[['Year','Month','Active_kwt','Region']].copy()
 z=pd.merge(x,y)
 print(z)
 
-
-#kwt consumption per week per day and per month 
-kwt_weekday=df.groupby(['weekday'])[['Active_kwt']]
-print(kwt_weekday.mean())
-
-kwt_per_week=df['kwt_per_weeek']=df.Active_kwt*7
-
-kwt_Month=df.groupby(['Month'])[['Active_kwt']]
-print(kwt_Month.mean())
-
 #formula to estimate consumption is number of lightbulbs of normally 60 W in the unit
 #then the result multiplied by number of hours it is switched on 
-#then divide by 1000. 2 euro per month(cost of kwt/mnth)
+#then divide by 1000. 0.50 euro per h. 
 #=> rooms 5 - 9(will consider more since there'll be other applicences) just to make it easier to estimate 
 #=> rooms 4 - 8
 #=> rooms 3 - 7 -7*60w (each lighting applience)
 #=> rooms 2 - 6
 #=> rooms 1 - 5
 
-#ex formula for 5 rooms to find out kwt hhours used for 9 60 watt bulbs kwh
+#CONSUMPTION
 
+#ex formula for 5 rooms to find out kwt hhours used for 9 60 watt bulbs kwh
 #watts= 60*9=540 W
 #kwh= 540 * 6h:1000
 #kwh=3240 :1000
 #kwh=3,24
+#To find the monthly energy usage, multiply the result by 30.
+#monthly kWh = 3.24 kWh × 30
+#monthly kWh = 97.2 kWh
+
+#COST CALCULATIONS
+
+#price = kWh × cost per kWh
+#price = 97.2 kWh × .50
+#kWh = 48.6
+
 
 
 
