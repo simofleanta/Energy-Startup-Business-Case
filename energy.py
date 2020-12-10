@@ -207,32 +207,30 @@ plt.show()
 #day corred with h
 #day with active per mth but not with kwh
 
-
-#correlation table  kwt-rooms
-
-"""
+# CORRELATION IN A MONTH, DEC
 plt.figure(figsize=(10,10))
 plt.title('Active_kwh_month - Room December', y=1.05, size=15)
 sns.heatmap(December.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
-#Active kwt and rooms correlate december
+plt.show()
 
 
+#PAIRPLOTS
 #Now that these two correlate, a pair plot will show the consumption behaviour 
 pairplot = sns.pairplot(df, vars=['Room_household','Active_kwh_month'])
+plt.show()
+#the more rooms we have, the larger the consumption per month
 
-# this shows that the more rooms are ther in house hold the bigger the kwt consumption with an exceptionfor 5 room house holdes,
-#probably because they are not so many with 5 rooms:)
+pairplot = sns.pairplot(December, vars=['Room_household','Kwh'])
+plt.show()
+#same tendency 
 
 
 #scatters on energy per week
-vissual = sns.lmplot(data=df, x='weekday', y='Active_kwh_month',
+vissual = sns.lmplot(data=df, x='weekday', y='Kwh',
                  fit_reg=False)
+plt.show()
 #the further we move in the week, the more consumption we have 
-
-
-#since we have a clear behaviour, a pairplot may show it better
-pairplot = sns.pairplot(df, vars=['weekday','Active_kwh_month'])
 
 
 #----------------Corrs for house hold rooms
@@ -248,6 +246,7 @@ plt.figure(figsize=(10,10))
 plt.title('Active_kwt-day correlation (3 room household)', y=1.05, size=15)
 sns.heatmap(Room_3.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
+plt.show()
 
 #correlation table  kwt-day is correlated 0.14
 
@@ -257,6 +256,7 @@ plt.figure(figsize=(10,10))
 plt.title('Active_kwh_month-day correlation (4 room household)', y=1.05, size=15)
 sns.heatmap(Room_4.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
+plt.show()
 
 #stronger correlations thatn with day, hour are stronger than in the 3 room household
 
@@ -266,19 +266,16 @@ plt.figure(figsize=(10,10))
 plt.title('Active_kwh_month-day correlation (4 room household)', y=1.05, size=15)
 sns.heatmap(Room_5.corr(),linewidths=0.1,vmax=1.0, square=True, 
             cmap='viridis', linecolor='white', annot=True)
+plt.show()
 #no correlations due to the fact that there were not enough households
 
 region_corr=df[['Active_kwh_month','Region','Season','Room_household']].copy()
 plt.figure(figsize=(10,10))
 plt.title('Region - Active_kwh_month correlations', y=1.05, size=15)
 sns.heatmap(region_corr.corr(),linewidths=0.1,vmax=1.0, square=True, 
-            cmap='viridis', linecolor='white', annot=True)
+            cmap='Blues', linecolor='white', annot=True)
 
 #correlation kwt-rooms  0.39 
-
-#Pairplot
-
-
 
 
 #--------------------------Pairplots
@@ -291,9 +288,6 @@ pairplot = sns.pairplot(Room_3, vars=['Hour','Active_kwh_month'])
 
 pairplot = sns.pairplot(region_corr, vars=['Region','Active_kwh_month'])
 plt.show()
-
-#the later it is the higher is the consumption is 
-#the later in the week the higher the kwt consumption
 
 
 
@@ -312,7 +306,7 @@ Regional_vissual = sns.lmplot(data=Room_4, x='Region', y='Active_kwh_month',
 kwt=df
 df = px.data.tips()
 fig = px.density_heatmap(Room_4, x="Region", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 #In Amsterdam we have  25 units with 4 rooms  consuming 4800 kwt
 #In Groningen we have 40 units with 4 rooms consuming 4800  kwt
 #Berlin consumes least. with for rooms 
@@ -325,16 +319,16 @@ Amsterdam=Season[Season.Region=='Amsterdam']
 #Amsterdam in weekday in 4 room units
 df = px.data.tips()
 fig = px.density_heatmap(Amsterdam, x="weekday", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 
 Berlin=Season[Season.Region=='Berlin'] 
 df = px.data.tips()
 fig = px.density_heatmap(Berlin, x="weekday", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 
 df = px.data.tips()
 fig = px.density_heatmap(Berlin, x="Hour", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 #In Berlin not so many units with 4 rooms but those that are consumme consistently. 
 #in the weekend kwt consumption stays the same but the number consumming that much increases. People are more at home. 
 
@@ -346,15 +340,15 @@ fig = px.density_heatmap(Berlin, x="Hour", y="Active_kwh_month", nbinsx=30, nbin
 Season=Room_4[Room_4.Season=='winter']
 df = px.data.tips()
 fig = px.density_heatmap(Season, x="Hour", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 #In winter the day is short as it darkens at arounf 15. Therefore kwt consumption in 4 room units, 
 # starts to increase at around 15, up to 4800 Actve kwt ad 17 5600 kwt. 
 
 Season=Room_4[Room_4.Season=='winter']
 df = px.data.tips()
 fig = px.density_heatmap(Season, x="weekday", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
-"""
+plotly.offline.plot(fig, filename='kwt')
+
 
 
 
