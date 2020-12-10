@@ -118,7 +118,7 @@ df=DataFrame(energy.head(500))
 #print(df.head(500))
 
 #Make copies of dfs to make easier to read it in a table
-x=energy_df[['Year','Month','Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
+x=energy_df[['Year','Day','Month','Profitablity','ROI_2019','ROI_2018','Client_Room_household','Sales_rev']].copy()
 y=df[['Year','Month','Active_kwt','Region']].copy()
 
 #merge x+y 
@@ -126,6 +126,30 @@ z=pd.merge(x,y)
 print(z)
 
 
+#kwt consumption per week per day and per month 
+kwt_weekday=df.groupby(['weekday'])[['Active_kwt']]
+print(kwt_weekday.mean())
+
+kwt_per_week=df['kwt_per_weeek']=df.Active_kwt*7
+
+kwt_Month=df.groupby(['Month'])[['Active_kwt']]
+print(kwt_Month.mean())
+
+#formula to estimate consumption is number of lightbulbs of normally 60 W in the unit
+#then the result multiplied by number of hours it is switched on 
+#then divide by 1000. 2 euro per month(cost of kwt/mnth)
+#=> rooms 5 - 9(will consider more since there'll be other applicences) just to make it easier to estimate 
+#=> rooms 4 - 8
+#=> rooms 3 - 7 -7*60w (each lighting applience)
+#=> rooms 2 - 6
+#=> rooms 1 - 5
+
+#ex formula for 5 rooms to find out kwt hhours used for 9 60 watt bulbs kwh
+
+#watts= 60*9=540 W
+#kwh= 540 * 6h:1000
+#kwh=3240 :1000
+#kwh=3,24
 
 
 
