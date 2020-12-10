@@ -268,6 +268,13 @@ def generateROI_dec18(investment,Costs,Loss):
     return net_profit18_dec/investment*100
 print(generateROI_dec18(investment,Costs_18,Loss_18))
 
+#calculate profitability 
+
+
+
+
+#subset with roi so I can decide whether to use the energy app for more rooms husehold. 
+#so after subsetting, will try a corr between roi and sales or househlds
 
 
 
