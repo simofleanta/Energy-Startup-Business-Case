@@ -346,7 +346,8 @@ pairplot = sns.pairplot(z, vars=['Profitablity','Client_Room_household'])
 
 #the app should make client understand not only how much kwt are active during evening or end of the week
 # /month, but also how much energy they could save. 
-# figure out a for that calculation now that the data was merged into z df.
+# figure out a for that calculation now that the data was merged into z df. that is an a separate section
+
 
 
 
