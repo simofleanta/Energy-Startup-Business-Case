@@ -1,5 +1,5 @@
 
-# Startup "Energy" 
+# Startup "Light bulb Energy" 
 #We are dealing with a startup that is working on an electric energy monitoring app for households and in the future for businesses. 
 This is an electric energy consumption analysis for threee regions, Berlin, GronIngen and Amsterdam.  
 #the data is taken from an people living in dofferent households, that are using this app 
