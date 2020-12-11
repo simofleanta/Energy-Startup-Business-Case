@@ -21,6 +21,10 @@ import plotly.express as px
 
 #Business ASPECT
 #currency-euro
+#analyzed the business
+#using corrs we built on the analysis
+#merged in a separate section, the business analysis and the energy consumption to understand the trends 
+
 
 #open file the energy file
 startup=pd.read_csv('energy_startup.csv')
