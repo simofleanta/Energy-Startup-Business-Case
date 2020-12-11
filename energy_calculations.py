@@ -175,7 +175,8 @@ vissual = sns.lmplot(data=z, x='kwh_consumption_cost_month', y='Profitablity',
 plt.show()
 #as the monthly consumption decreases, profitability increase. Which means that if you customer saves energy theremore money, they'll be likely to 
 #by the app. 
-#need to to consider ways to help custommers save energy
+#need to to consider ways to help custommers save energy a before/after section to do 
+
 
 
 
