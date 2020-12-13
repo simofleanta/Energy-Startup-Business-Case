@@ -227,6 +227,12 @@ pairplot = sns.pairplot(December, vars=['Room_household','Kwh'])
 plt.show()
 #same tendency 
 
+#kwh per season
+#The more we head to winter, we consume more 
+Regional_vissual = sns.lmplot(data=December, x='Season', y='Active_kwh_month',
+                 fit_reg=False)
+plt.show()
+
 #scatters on energy per week
 vissual = sns.lmplot(data=df, x='weekday', y='Kwh',
                  fit_reg=False)
@@ -291,6 +297,8 @@ plt.show()
 
 pairplot = sns.pairplot(region_corr, vars=['Region','Active_kwh_month'])
 plt.show()
+
+
 
 #--------------------REGIONS----Watching kwt behaviour in regions
 
