@@ -38,8 +38,9 @@ print(sdf.head(700))
 
 #taking info from both datasets into one df. #merge 
 
-startup_df=sdf[['Year','Month','Sales_rev','Season','Month_Profit','Client_Region','Client_Room_household']].copy()
-endf=df[['Year','Month','Active_kwh_month','Kwh']].copy()
+startup_df=sdf[['Year','Month','Sales_rev','Season','Month_Profit','Client_Region']].copy()
+print(startup_df)
+endf=df[['Year','Month','Active_kwh_month','Kwh', 'Room_household']].copy()
 z_merge=pd.merge(startup_df,endf)
 print(z_merge)
 
@@ -48,9 +49,20 @@ print(z_merge)
 #plt.show()
 
 December=z_merge[z_merge.Month=='Dec']
+Decemberd=df[df.Month=='Dec']
+#sp=sns.stripplot(z_merge.Sales_rev,z_merge.Season, size=3.5, alpha=0.4);
+#plt.show()
 
-sp=sns.stripplot(December.Sales_rev,December.Kwh, size=5, alpha=0.2);
+#sp=sns.stripplot(z_merge.Sales_rev,z_merge.Client_Region, size=3.5, alpha=0.4);
+#plt.show()
+
+sp=sns.stripplot(z_merge.Room_household, z_merge.Sales_rev, jitter=True,  size=3.5, alpha=0.4)
+
+
+sns.stripplot(x='Room_household', y='Sales_rev', jitter=0.30, size=10, alpha=0.7, marker='.', linewidth=1, edgecolor='white', data=z_merge)
 plt.show()
+
+
 
 
 
