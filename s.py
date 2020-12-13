@@ -26,9 +26,5 @@ print(energy.columns)
 df=DataFrame(energy.head(500))
 print(df.head(500))
 
+#December=df[df.Month=='Dec']
 
-December=df[df.Month=='Dec']
-
-Regional_vissual = sns.lmplot(data=December, x='Season', y='Active_kwh_month',
-                 fit_reg=False)
-plt.show()
