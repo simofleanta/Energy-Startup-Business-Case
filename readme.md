@@ -132,3 +132,8 @@ This is an electric energy consumption analysis for threee regions, Berlin, Gron
 ![prof_kwh](https://user-images.githubusercontent.com/47668423/102016636-3201cc00-3d62-11eb-8a9d-a6c68aa0039c.png)
 
 # Part III - soon 
+-code beautify
+-add thir part
+-add info for graphs 
+
+
