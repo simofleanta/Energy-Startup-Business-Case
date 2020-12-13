@@ -109,8 +109,8 @@ energy_df=df
 print(energy_df.columns)
 
 
-
-#-------------------Merge part 1 and 2 and obtain month consumption calculation
+#-------------------MERGE STARTUP ASPECT ANALYSIS AND ENERGY ANALYSIS 
+#------------------Otaining month consumption calculation
 
 #After calculations, print columns to see calculations added to the dataframe
 print(df.head(5))

@@ -303,7 +303,7 @@ plt.show()
 #not corr profitability with client householld or very close to being corred
 #overall very weak correlations 
 
-#-------------------MERGE STARTUP ASPECT ANALYSIS AND ENERGY ANALYSIS 
+
 
 
 
