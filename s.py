@@ -48,7 +48,8 @@ print(z_merge)
 #plt.show()
 
 December=z_merge[z_merge.Month=='Dec']
-sp=sns.stripplot(December.Sales_rev, December.Client_Region)
+
+sp=sns.stripplot(December.Sales_rev,December.Kwh, size=5, alpha=0.2);
 plt.show()
 
 
