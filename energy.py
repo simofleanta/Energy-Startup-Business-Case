@@ -329,7 +329,7 @@ fig = px.density_heatmap(Berlin, x="weekday", y="Active_kwh_month", nbinsx=30, n
 
 df = px.data.tips()
 fig = px.density_heatmap(Berlin, x="Hour", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 #In Berlin not so many units with 4 rooms but those that are consumme consistently. 
 #in the weekend kwt consumption stays the same but the number consumming that much increases. People are more at home. 
 
@@ -340,14 +340,14 @@ fig = px.density_heatmap(Berlin, x="Hour", y="Active_kwh_month", nbinsx=30, nbin
 Season=Room_4[Room_4.Season=='winter']
 df = px.data.tips()
 fig = px.density_heatmap(Season, x="Hour", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 #In winter the day is short as it darkens at arounf 15. Therefore kwt consumption in 4 room units, 
 # starts to increase at around 15, up to 4800 Actve kwt ad 17 5600 kwt. 
 
 Season=Room_4[Room_4.Season=='winter']
 df = px.data.tips()
 fig = px.density_heatmap(Season, x="weekday", y="Active_kwh_month", nbinsx=30, nbinsy=20, color_continuous_scale="RdBu",title='Kwt consumption distribution accross the regions')
-#plotly.offline.plot(fig, filename='kwt')
+plotly.offline.plot(fig, filename='kwt')
 
 
 
