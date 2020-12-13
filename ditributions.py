@@ -59,12 +59,21 @@ Decemberd=df[df.Month=='Dec']
 sp=sns.stripplot(z_merge.Room_household, z_merge.Sales_rev, jitter=True,  size=3.5, alpha=0.4)
 
 
-sns.stripplot(x='Room_household', y='Sales_rev', jitter=0.30, size=10, alpha=0.7, marker='.', linewidth=1, edgecolor='white', data=z_merge)
+sns.stripplot(x='Room_household', y='Sales_rev', jitter=0.30, size=10, alpha=0.7, split=True, palette='Blues', marker='.', linewidth=1, edgecolor='white', data=z_merge)
 plt.show()
 
+energy=pd.read_csv('energy.csv')
+print(energy.columns)
+df=DataFrame(energy.head(500))
+print(df.head(500))
 
 
 
+#sns.stripplot(x='Season', y='Active_kwh_month', jitter=0.30, size=10, alpha=0.7, hue='Room_household', palette='OrRd', marker='.', linewidth=1, edgecolor='white', data=z_merge)
+#plt.show()
+
+sns.stripplot(x='Season', y='Kwh', jitter=0.30, size=10, alpha=0.7, hue='Region', palette='OrRd', marker='.', linewidth=1, edgecolor='white', data=z_merge)
+plt.show()
 
 
 

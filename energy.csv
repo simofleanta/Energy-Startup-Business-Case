@@ -1,4 +1,4 @@
-Year,Month,Day,Season,Hour,Day_Time,weekday,Room_household,Active_kwh_month,Kwh,Room_household,Region
+Year,Month,Day,Season,Hour,Day_Time,weekday,Room_household,Active_kwh_month,Kwh,Room_household_lightbulbs,Region
 2019,Jan,1,winter,0,Morning,Sunday,5,105.3,3.51,9,Amsterdam
 2019,Jan,2,winter,1,Morning,Monday,5,105.3,3.51,9,Amsterdam
 2019,Jan,3,winter,2,Midday,Tuesday,5,105.3,3.51,9,Groningen
