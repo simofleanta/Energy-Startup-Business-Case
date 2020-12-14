@@ -126,53 +126,24 @@ For over 90 KwH per month consumption sales revenue. may reach over 50000 euro.
 
 ![Sales_room distribution](https://user-images.githubusercontent.com/47668423/102016639-329a6280-3d62-11eb-9a59-10e6ef103f80.png)
 
+Fig 5. showing revenues distributed across rooms household.
 
+It is clear that revenue increases with consumtion and household room nuber.
+In this figure 5 room households bring over 60000 sales revenue. And therefore a higher profitability too. 
 
-
-
-
-
-
-
-
-
- Business Analysis plots
-
-<img width="799" alt="app performance in Groningen" src="https://user-images.githubusercontent.com/47668423/102016569-e9e2a980-3d61-11eb-82c4-facb6cc4bbc8.png">
-<img width="932" alt="fig 8" src="https://user-images.githubusercontent.com/47668423/102016573-eb13d680-3d61-11eb-8bc8-4988b2b5e20f.png">
 
 ![Figure_1](https://user-images.githubusercontent.com/47668423/102016575-ebac6d00-3d61-11eb-85b0-6134189d2a18.png)
 
 ![Figure_2](https://user-images.githubusercontent.com/47668423/102016577-ebac6d00-3d61-11eb-81b1-1eb60f14e9ea.png)
 
-
 ![Figure_3](https://user-images.githubusercontent.com/47668423/102016578-ec450380-3d61-11eb-874b-aded0fb2c977.png)
 
 ![Figure_4](https://user-images.githubusercontent.com/47668423/102016579-ec450380-3d61-11eb-8162-5370b76860e8.png)
 
-![Figure_5](https://user-images.githubusercontent.com/47668423/102016580-ecdd9a00-3d61-11eb-9b92-6503183c8f2a.png)
 
-![Figure_6](https://user-images.githubusercontent.com/47668423/102016581-ecdd9a00-3d61-11eb-96ce-9aea21ae40ad.png)
 
-![Figure_7](https://user-images.githubusercontent.com/47668423/102016583-ed763080-3d61-11eb-835c-823fa21022e5.png)
 
-<img width="663" alt="Jan scores" src="https://user-images.githubusercontent.com/47668423/102016584-ed763080-3d61-11eb-87d1-1ee433b42fdc.png">
 
-<img width="504" alt="merge season" src="https://user-images.githubusercontent.com/47668423/102016585-ee0ec700-3d61-11eb-9427-5b0db77bb203.png">
-
-<img width="668" alt="roi_profit" src="https://user-images.githubusercontent.com/47668423/102016587-eea75d80-3d61-11eb-8d09-dc39919991bc.png">
-
-<img width="798" alt="s rev countries" src="https://user-images.githubusercontent.com/47668423/102016588-eea75d80-3d61-11eb-9280-1acd13551b02.png">
-
-<img width="279" alt="s rev in month rest of mths" src="https://user-images.githubusercontent.com/47668423/102016589-ef3ff400-3d61-11eb-8c91-e47aeb113ff0.png">
-
-<img width="274" alt="s rev in mth" src="https://user-images.githubusercontent.com/47668423/102016590-ef3ff400-3d61-11eb-8742-5790012de47a.png">
-
-<img width="767" alt="s rev in weekday in generl" src="https://user-images.githubusercontent.com/47668423/102016591-ef3ff400-3d61-11eb-8f87-da141438dc04.png">
-
-<img width="798" alt="sale rev in countries" src="https://user-images.githubusercontent.com/47668423/102016592-efd88a80-3d61-11eb-874f-1fd43a4500b1.png">
-
-<img width="790" alt="winter app" src="https://user-images.githubusercontent.com/47668423/102016593-f0712100-3d61-11eb-8b72-ffa319a8954e.png">
 
 # Merged Business and Energy Analysis 
 
