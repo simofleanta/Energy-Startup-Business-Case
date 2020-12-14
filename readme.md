@@ -153,12 +153,22 @@ February and January are most profitable.
 
 
 
-# Part III - soon 
+# Part III - Operational costs
+#Where the money is mostly invested on?
 
+<img width="807" alt="operational costs" src="https://user-images.githubusercontent.com/47668423/102113314-2e8d4400-3e39-11eb-861b-bffba0301ff9.png">
 
+#1.staff
+#2.Marketing 
+#R&D
 
+#Who is best paid in the startup?
 
+<img width="779" alt="employees" src="https://user-images.githubusercontent.com/47668423/102113585-7f9d3800-3e39-11eb-9137-8e423cdfb793.png">
 
+#Soft_eng
+#Lawyers
+#BI
 
 
 # Conclusions 
