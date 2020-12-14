@@ -99,7 +99,16 @@ This shows that 2019 was most active in terms of consumption but Hague and Luxem
 
 
 Fig 1. showing where the sales revenue increase from. 
-Sales Revenue increase from Luxembourg and Hague; where the consumption is higher and number of rooms is 4-5.  
+
+Sales Revenue increase from Luxembourg and Hague; where the consumption is higher and number of rooms is 4-5. 
+
+
+![Lux](https://user-images.githubusercontent.com/47668423/102073155-2e725180-3e03-11eb-8126-23bd093dd3f0.png)
+
+Figure 2. showing sales revenue benchamrk across regions. 
+
+Luxembourg had a higher sale revenue in 2018, over 40000 but in 2019, Berlin over passes Luxembourg with over 40000. In 2019 Groningen reached a sale revenue of 60000 euro. 
+
 
 
 
