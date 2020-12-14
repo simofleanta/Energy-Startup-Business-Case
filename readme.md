@@ -132,13 +132,24 @@ It is clear that revenue increases with consumtion and household room nuber.
 In this figure 5 room households bring over 60000 sales revenue. And therefore a higher profitability too. 
 
 
-![Figure_1](https://user-images.githubusercontent.com/47668423/102016575-ebac6d00-3d61-11eb-85b0-6134189d2a18.png)
+![sum](https://user-images.githubusercontent.com/47668423/102079077-4dc1ac80-3e0c-11eb-81bf-04822334739c.png)
 
-![Figure_2](https://user-images.githubusercontent.com/47668423/102016577-ebac6d00-3d61-11eb-81b1-1eb60f14e9ea.png)
+Figure 6. showing sum of sales_revenues across months and the room household distribution. 
 
-![Figure_3](https://user-images.githubusercontent.com/47668423/102016578-ec450380-3d61-11eb-874b-aded0fb2c977.png)
+3 room households bring more sales revenue and in autumn months. 
+
+![Mean](https://user-images.githubusercontent.com/47668423/102079310-bf99f600-3e0c-11eb-8e73-d998088051df.png)
+
+Figure 7. showing mean of sales_revenues across weekdays and the room household distribution. 
+
+Beginning of the week seems more profitable. 
+
 
 ![Figure_4](https://user-images.githubusercontent.com/47668423/102016579-ec450380-3d61-11eb-8162-5370b76860e8.png)
+
+Figure 8. showing mean of sales_revenues across months and the room household distribution. 
+
+February and January are most profitable. 
 
 
 
