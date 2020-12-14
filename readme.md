@@ -62,6 +62,15 @@ Figure 3. showing active Kwh behaviour during the da in December.
 #Light bulb electric energy consumption increases most during Midday, which shows tht arround 15:40 or earlier it gets darker.
 #People are determined to switch lights on more often.
 
+![fixed corr](https://user-images.githubusercontent.com/47668423/102065176-8192d700-3df8-11eb-9b27-ca79a70d9fb8.png)
+
+Figure 4. showing electric energy consumption correlations 
+
+The correlations are not so strong however they are to be considered when taking decisions. 
+There is a correlations between Room household and Actve Kwh per month - 1 which confirms that the larger the number of rooms the higher the consumption.
+The same correlation could be found between Kwh and Room Household. 
+
+
 
 
 
