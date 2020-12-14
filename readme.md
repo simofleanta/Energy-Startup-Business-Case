@@ -163,16 +163,6 @@ February and January are most profitable.
 #R&D
 
 
-
-|----:|-------:|:--------|:---------------------------------|----------------:|
-|   0 |   2019 | Jan     | Meetings                         |            5000 |
-|   1 |   2019 | Jan     | Marketing_web                    |           10000 |
-|   2 |   2019 | Jan     | Staff                            |           20000 |
-|   3 |   2019 | Jan     | R&D                              |           10000 |
-|   4 |   2019 | Jan     | Office_utilities                 |            4500 |
-
-
-
 #Who is best paid in the startup?
 
 <img width="779" alt="employees" src="https://user-images.githubusercontent.com/47668423/102113585-7f9d3800-3e39-11eb-9137-8e423cdfb793.png">
