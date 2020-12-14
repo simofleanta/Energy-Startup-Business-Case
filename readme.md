@@ -184,8 +184,7 @@ Design a device that automates
 lights withches on and off according to the day's lighting midday dark or smth. 
 
 
--add third part
--regplot
+
 
 
  
