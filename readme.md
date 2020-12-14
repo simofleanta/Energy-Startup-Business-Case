@@ -53,7 +53,15 @@ Figure 1. showing Active Kwh per month distributed across the four seasons for 1
 Figure 2. showing KwH distributed across months for 2018 and 2019. 
 
 #Since electric energy onsumption increases in autumn and winter, in this graphs can be observed that winter months are more active than the summer ones,
-up to April, we consider the months to be winter months since the day is still short. 
+up to April, we consider the months to be winter months since the day is still short. The graphs shows that 2019 was mor active than 2018 in terms of electric energy consumption. 
+
+![Figure_1](https://user-images.githubusercontent.com/47668423/102064320-725f5980-3df7-11eb-9b7f-32f0a26f4988.png)
+
+Figure 3. showing active Kwh behaviour during the da in December. 
+
+#Light bulb electric energy consumption increases most during Midday, which shows tht arround 15:40 or earlier it gets darker.
+#People are determined to switch lights on more often.
+
 
 
 
