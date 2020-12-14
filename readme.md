@@ -153,22 +153,6 @@ February and January are most profitable.
 
 
 
-
-
-
-# Merged Business and Energy Analysis 
-
-
-![dots distribution](https://user-images.githubusercontent.com/47668423/102016630-2f9f7200-3d62-11eb-9567-e0395f789bdc.png)
-
-![Figure_1](https://user-images.githubusercontent.com/47668423/102016632-30d09f00-3d62-11eb-9748-d5b40b69cf6f.png)
-
-![Figure_2](https://user-images.githubusercontent.com/47668423/102016633-31693580-3d62-11eb-859b-f656920a54aa.png)
-
-![Figure_5](https://user-images.githubusercontent.com/47668423/102016635-31693580-3d62-11eb-87bd-7337aebe32d2.png)
-
-![prof_kwh](https://user-images.githubusercontent.com/47668423/102016636-3201cc00-3d62-11eb-8a9d-a6c68aa0039c.png)
-
 # Part III - soon 
 -code beautify
 -add thir part
