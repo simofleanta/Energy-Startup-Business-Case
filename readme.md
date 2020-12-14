@@ -145,7 +145,7 @@ Figure 7. showing mean of sales_revenues across weekdays and the room household 
 Beginning of the week seems more profitable. 
 
 
-![Figure_4](https://user-images.githubusercontent.com/47668423/102016579-ec450380-3d61-11eb-8162-5370b76860e8.png)
+![Winter_M](https://user-images.githubusercontent.com/47668423/102080399-a98d3500-3e0e-11eb-9ff7-adb52c4e2264.png)
 
 Figure 8. showing mean of sales_revenues across months and the room household distribution. 
 
