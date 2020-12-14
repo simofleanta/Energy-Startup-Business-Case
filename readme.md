@@ -114,6 +114,7 @@ Luxembourg had a higher sale revenue in 2018, over 40000 but in 2019, Berlin ove
 Figure 3. showing correlations between sales revenue and room households. 
 
 There is  a weak but significant correlation between sales revenue and room household. 
+Also there is a correlation between return of investment and rooms.
 
 
 
@@ -122,38 +123,10 @@ There is  a weak but significant correlation between sales revenue and room hous
 
 
 
-# Energy plots
-
-<img width="188" alt="agg kwh" src="https://user-images.githubusercontent.com/47668423/102016513-bacc3800-3d61-11eb-87df-ca8f521a2912.png">
-
-
-![Figure_3](https://user-images.githubusercontent.com/47668423/102016515-bdc72880-3d61-11eb-8ced-449996cfa0f6.png)
-
-![Figure_4](https://user-images.githubusercontent.com/47668423/102016516-be5fbf00-3d61-11eb-870f-c339c2d5436b.png)
-
-![Figure_5](https://user-images.githubusercontent.com/47668423/102016517-be5fbf00-3d61-11eb-8ade-507b9965b296.png)
-
-![Figure_6](https://user-images.githubusercontent.com/47668423/102016519-bef85580-3d61-11eb-86bd-c0b30cc38b21.png)
-
-![Figure_7](https://user-images.githubusercontent.com/47668423/102016521-bef85580-3d61-11eb-801c-f73fdd7f5091.png)
-
-![Figure_8](https://user-images.githubusercontent.com/47668423/102016522-bf90ec00-3d61-11eb-9583-fbb6a46328f2.png)
-
-![Figure_9](https://user-images.githubusercontent.com/47668423/102016523-bf90ec00-3d61-11eb-9b1d-cbbd01fcb50e.png)
-
-![Figure_10](https://user-images.githubusercontent.com/47668423/102016524-c0298280-3d61-11eb-8b4a-5aca18a35153.png)
-
-![Figure_11](https://user-images.githubusercontent.com/47668423/102016525-c0298280-3d61-11eb-8f01-540483c5e2a8.png)
-
-<img width="175" alt="kwh season" src="https://user-images.githubusercontent.com/47668423/102016526-c0c21900-3d61-11eb-8e73-89b9a8d0e1c5.png">
-
-<img width="255" alt="max en" src="https://user-images.githubusercontent.com/47668423/102016527-c0c21900-3d61-11eb-960a-baaf7cf0eb95.png">
 
 
 
-<img width="496" alt="room 4 kw dec" src="https://user-images.githubusercontent.com/47668423/102016529-c15aaf80-3d61-11eb-88b5-02f906cc24d5.png">
 
-<img width="146" alt="weekday kwh" src="https://user-images.githubusercontent.com/47668423/102016531-c1f34600-3d61-11eb-9d22-8236424fd5c6.png">
 
 ![sales_kwh](https://user-images.githubusercontent.com/47668423/102016638-3201cc00-3d62-11eb-8317-03d12b2127f4.png)
 
