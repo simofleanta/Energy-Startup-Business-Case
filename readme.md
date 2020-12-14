@@ -117,25 +117,21 @@ There is  a weak but significant correlation between sales revenue and room hous
 Also there is a correlation between return of investment and rooms.
 
 
-
-
-
-
-
-
-
-
-
-
-
 ![sales_kwh](https://user-images.githubusercontent.com/47668423/102016638-3201cc00-3d62-11eb-8317-03d12b2127f4.png)
 
 ![Sales_room distribution](https://user-images.githubusercontent.com/47668423/102016639-329a6280-3d62-11eb-9a59-10e6ef103f80.png)
 
 
-# Part II
 
-# Business Analysis plots
+
+
+
+
+
+
+
+
+ Business Analysis plots
 
 <img width="799" alt="app performance in Groningen" src="https://user-images.githubusercontent.com/47668423/102016569-e9e2a980-3d61-11eb-82c4-facb6cc4bbc8.png">
 <img width="932" alt="fig 8" src="https://user-images.githubusercontent.com/47668423/102016573-eb13d680-3d61-11eb-8bc8-4988b2b5e20f.png">
