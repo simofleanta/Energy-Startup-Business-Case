@@ -109,6 +109,14 @@ Figure 2. showing sales revenue benchamrk across regions.
 
 Luxembourg had a higher sale revenue in 2018, over 40000 but in 2019, Berlin over passes Luxembourg with over 40000. In 2019 Groningen reached a sale revenue of 60000 euro. 
 
+![Figure_7](https://user-images.githubusercontent.com/47668423/102016583-ed763080-3d61-11eb-835c-823fa21022e5.png)
+
+Figure 3. showing correlations between sales revenue and room households. 
+
+There is  a weak but significant correlation between sales revenue and room household. 
+
+
+
 
 
 
