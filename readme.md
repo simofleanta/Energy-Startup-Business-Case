@@ -166,6 +166,14 @@ February and January are most profitable.
 
 <img width="779" alt="employees" src="https://user-images.githubusercontent.com/47668423/102113585-7f9d3800-3e39-11eb-9137-8e423cdfb793.png">
 
+|     |   Year | Month   | Employees          |   Employee_cost |
+|----:|-------:|:--------|:-------------------|----------------:|
+|   0 |   2019 | Jan     | Soft_engineer      |            5000 |
+|   1 |   2019 | Jan     | BI_Analyst         |            4300 |
+|   2 |   2019 | Jan     | Accountant         |            1600 |
+|   3 |   2019 | Jan     | CEO                |            3000 |
+|   4 |   2019 | Jan     | Business_developer |            2700 |
+
 #Soft_eng
 #Lawyers
 #BI
@@ -203,5 +211,9 @@ lights withches on and off according to the day's lighting midday dark or smth.
 
 
  
+
+
+
+
 
 

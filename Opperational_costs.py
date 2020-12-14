@@ -48,11 +48,12 @@ df=DataFrame(opp.head(800))
 p=df
 df= px.data.tips()
 figure=px.pie(p, values='Employee_cost', names='Employees', color_discrete_sequence=px.colors.sequential.RdBu)
-plotly.offline.plot(figure, filename='em')
+#plotly.offline.plot(figure, filename='em')
 
 #Soft_eng
 #Lawyers
 #BI
+
 
 
 
