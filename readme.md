@@ -168,13 +168,6 @@ February and January are most profitable.
 |   2 |   2019 | Jan     | Staff                            |           20000 |
 |   3 |   2019 | Jan     | R&D                              |           10000 |
 |   4 |   2019 | Jan     | Office_utilities                 |            4500 |
-|   5 |   2019 | Jan     | Banking                          |            2400 |
-|   6 |   2019 | Jan     | External_collaborators           |            2400 |
-|   7 |   2019 | Jan     | Licenses                         |            5000 |
-|   8 |   2019 | Jan     | External_collaborators_transport |            5000 |
-|   9 |   2019 | Jan     | Staff_transport   
-
-
 
 
 
