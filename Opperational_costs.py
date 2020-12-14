@@ -19,9 +19,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 import plotly.express as px
 
-
-
-
 #open file the energy file
 opp=pd.read_csv('Staff.csv')
 print(opp.columns)
@@ -34,20 +31,30 @@ print(df.head(800))
 opperational=df
 df = px.data.tips()
 fig = px.pie(opperational, values='Monthly_costs', names='General_Expenditures', color_discrete_sequence=px.colors.sequential.RdBu)
-#plotly.offline.plot(fig, filename='kwt')
-
+plotly.offline.plot(fig, filename='kwt')
 
 #1.staff
 #2.Marketing 
 #R&D
 
-opps=pd.read_csv('Emps.csv')
-print(opp.columns)
-dfs=DataFrame(opps.head(800))
-print(dfs.head(800))
+#Who is best paid?
 
-x=pd.merge(df,dfs)
-print(x)
+#open file the energy file
+opp=pd.read_csv('Emps.csv')
+print(opp.columns)
+df=DataFrame(opp.head(800))
+#print(df.head(800))
+
+p=df
+df= px.data.tips()
+figure=px.pie(p, values='Employee_cost', names='Employees', color_discrete_sequence=px.colors.sequential.RdBu)
+plotly.offline.plot(figure, filename='em')
+
+#Soft_eng
+#Lawyers
+#BI
+
+
 
 
 

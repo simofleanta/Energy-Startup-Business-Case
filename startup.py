@@ -303,7 +303,42 @@ plt.show()
 #not corr profitability with client householld or very close to being corred
 #overall very weak correlations 
 
+#------------------Part 3
 
+#open file the energy file
+opp=pd.read_csv('Staff.csv')
+print(opp.columns)
+df=DataFrame(opp.head(800))
+print(df.head(800))
+
+
+#where is the money mostly spent?
+
+opperational=df
+df = px.data.tips()
+fig = px.pie(opperational, values='Monthly_costs', names='General_Expenditures', color_discrete_sequence=px.colors.sequential.RdBu)
+plotly.offline.plot(fig, filename='kwt')
+
+#1.staff
+#2.Marketing 
+#R&D
+
+#Who is best paid?
+
+#open file the energy file
+opp=pd.read_csv('Emps.csv')
+print(opp.columns)
+df=DataFrame(opp.head(800))
+#print(df.head(800))
+
+p=df
+df= px.data.tips()
+figure=px.pie(p, values='Employee_cost', names='Employees', color_discrete_sequence=px.colors.sequential.RdBu)
+plotly.offline.plot(figure, filename='em')
+
+#Soft_eng
+#Lawyers
+#BI
 
 
 
