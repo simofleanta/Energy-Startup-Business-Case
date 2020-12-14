@@ -1,18 +1,11 @@
 
 # Startup "Light bulb Energy" 
-#We are dealing with a startup that is working on an lights electric energy monitoring app for households and in the future for businesses. 
-This is an electric energy consumption analysis for threee regions, Berlin, GronIngen and Amsterdam.  
+#We are dealing with a startup that is working on an light bulb electric energy monitoring app for households and in the future for businesses. 
+This is an electric energy consumption analysis is present in more regions, Berlin, Groningen and Amsterdam Aarhurs  
 #the data is taken from an people living in different households, that are using this app 
-#we are interested to understand the Kwt consumption behaviour not only in different regions but aso in different households, for years 2018-2019
-#Anlyzing the Kwt behaviour accross the units, regions and its seasonality, may help us better understand how we waste energy or we save energy and therefore optimize costs and even be more evironmentally conscous. 
-
-#The analysis wil take part in three stages
-#-part I - Active Kwt behaviour 
-#-part II - economic startup context 
-#-part III - Costs and investment analysis 
-
-
-# Part I 
+#we are interested to understand their Kwt consumption behaviour not only in different regions but aso in different households, for years 2018-2019
+so we can help them take better decisions in their wish to optimize electri consumption. 
+#Anlyzing the Kwt behaviour accross the units, regions and its seasonality, may help us better understand how they waste energy or save energy and therefore optimize costs and even be more evironmentally conscous.
 
 # How we dealth with the data   
 #formula to estimate consumption is number of lightbulbs of normally 60 W in the unit
@@ -24,7 +17,7 @@ This is an electric energy consumption analysis for threee regions, Berlin, Gron
 #=> rooms 2 - 6
 #=> rooms 1 - 5
 
-# CONSUMPTION ANALYSIS MADE ON THE DATABASE
+# Consumption Analysis
 #ex formula for 5 rooms to find out kwt hhours used for 9 60 watt bulbs kwh
 #watts= 60*9=540 W
 #kwh= 540 * 6h:1000
@@ -34,10 +27,20 @@ This is an electric energy consumption analysis for threee regions, Berlin, Gron
 #monthly kWh = 3.24 kWh × 30
 #monthly kWh = 97.2 kWh
 
-# COST CALCULATIONS using Python
+# KwH cost calculation
 #price = kWh × cost per kWh
 #price = 97.2 kWh × .50
 #kWh = 48.6
+
+#The analysis wil take part in three stages
+#-part I - Active Kwt behaviour 
+#-part II - economic startup context 
+#-part III - Costs and investment analysis coming soon. 
+
+
+# Part I - electric energy 
+
+
 
 # Energy plots
 
