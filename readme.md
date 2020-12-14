@@ -82,6 +82,13 @@ Came out that Luxembourg and Hgue have most 5 room household than other regions.
 The lowes consumption are Berlin and Groningen. 
 
 
+![client year](https://user-images.githubusercontent.com/47668423/102069934-b7d35500-3dfe-11eb-8dea-c7f0204523fa.png)
+
+Figure 6. Showing Kwh distribution across regions in both years.
+
+This shows that 2019 was most active in terms of consumption but Hague and Luxembourg consumes most in 2018 compared to other regions that are very active in 2019.
+
+
 
 
 # Energy plots
