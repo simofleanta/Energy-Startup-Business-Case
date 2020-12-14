@@ -48,7 +48,7 @@ Figure 1. showing Active Kwh per month distributed across the four seasons for 1
 #The graph shows that Active Kwh per month increases along with the number of rooms in households, and it becomes higher for autumn and winter seasons. 
 
 
-<img width="496" alt="room 4 kw dec" src="https://user-images.githubusercontent.com/47668423/102016529-c15aaf80-3d61-11eb-88b5-02f906cc24d5.png">
+![Month](https://user-images.githubusercontent.com/47668423/102016528-c15aaf80-3d61-11eb-90be-c3579faf2ab6.png)
 
 Figure 2. showing KwH distributed across months for 2018 and 2019. 
 
@@ -84,7 +84,7 @@ up to April, we consider the months to be winter months since the day is still s
 
 <img width="255" alt="max en" src="https://user-images.githubusercontent.com/47668423/102016527-c0c21900-3d61-11eb-960a-baaf7cf0eb95.png">
 
-![Month](https://user-images.githubusercontent.com/47668423/102016528-c15aaf80-3d61-11eb-90be-c3579faf2ab6.png)
+
 
 <img width="496" alt="room 4 kw dec" src="https://user-images.githubusercontent.com/47668423/102016529-c15aaf80-3d61-11eb-88b5-02f906cc24d5.png">
 
