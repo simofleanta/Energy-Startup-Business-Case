@@ -162,6 +162,8 @@ February and January are most profitable.
 #2.Marketing 
 #R&D
 
+
+
 |----:|-------:|:--------|:---------------------------------|----------------:|
 |   0 |   2019 | Jan     | Meetings                         |            5000 |
 |   1 |   2019 | Jan     | Marketing_web                    |           10000 |
