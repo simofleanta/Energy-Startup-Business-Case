@@ -79,7 +79,7 @@ print(df.head(500))
 #sns.stripplot(x='Client_Region', y='Kwh', jitter=0.30, size=15, alpha=0.7, hue='Year', palette='husl', marker='*', linewidth=1, edgecolor='white', data=z_merge)
 #plt.show()
 
-sns.stripplot(x='Client_Region', y='Sales_rev', jitter=0.30, size=15, alpha=0.7, hue='Year', palette='Blues', marker='o', linewidth=1, edgecolor='white', data=z_merge)
+sns.stripplot(x='Room_household', y='Sales_rev', jitter=0.30, size=15, alpha=0.7, hue='Year', palette='Blues', marker='*', linewidth=1, edgecolor='white', data=z_merge)
 plt.show()
 
 #sns.stripplot(x='Client_Region', y='Sales_rev', jitter=0.30, size=15, alpha=0.7, hue='Kwh',  palette='husl', marker='*', linewidth=1, edgecolor='white', data=z_merge)

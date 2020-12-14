@@ -124,7 +124,7 @@ Figure 4. showing the relationship between sales revenue and KwH per month consu
 This shows that there is a around 80 KwH per month consumptin at a over 45000 euro sales revenue. 
 For over 90 KwH per month consumption sales revenue. may reach over 50000 euro. 
 
-![Sales_room distribution](https://user-images.githubusercontent.com/47668423/102016639-329a6280-3d62-11eb-9a59-10e6ef103f80.png)
+![Room per year](https://user-images.githubusercontent.com/47668423/102076333-dab63700-3e07-11eb-8582-ceac655bc9c9.png)
 
 Fig 5. showing revenues distributed across rooms household.
 
