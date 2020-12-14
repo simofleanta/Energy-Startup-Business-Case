@@ -34,14 +34,14 @@ print(df.head(800))
 opperational=df
 df = px.data.tips()
 fig = px.pie(opperational, values='Monthly_costs', names='General_Expenditures', color_discrete_sequence=px.colors.sequential.RdBu)
-plotly.offline.plot(fig, filename='kwt')
+
 
 #1.staff
 #2.Marketing 
 #R&D
 
 
-Employees=df['Employees']
+Employees=df['Emps']
 print(Employees)
 
 
