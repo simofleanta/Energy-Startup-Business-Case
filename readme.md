@@ -153,7 +153,7 @@ February and January are most profitable.
 
 
 
-# Part III - Operational costs
+# Part III - Operational Costs
 #Where the money is mostly invested on?
 
 <img width="807" alt="operational costs" src="https://user-images.githubusercontent.com/47668423/102113314-2e8d4400-3e39-11eb-861b-bffba0301ff9.png">
@@ -169,6 +169,8 @@ February and January are most profitable.
 #Soft_eng
 #Lawyers
 #BI
+
+# Part IV soon
 
 
 # Conclusions 
