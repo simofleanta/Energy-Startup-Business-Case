@@ -48,12 +48,14 @@ Figure 1. showing Active Kwh per month distributed across the four seasons for 1
 #The graph shows that Active Kwh per month increases along with the number of rooms in households, and it becomes higher for autumn and winter seasons. 
 
 
+
 ![Month](https://user-images.githubusercontent.com/47668423/102016528-c15aaf80-3d61-11eb-90be-c3579faf2ab6.png)
 
 Figure 2. showing KwH distributed across months for 2018 and 2019. 
 
 #Since electric energy onsumption increases in autumn and winter, in this graphs can be observed that winter months are more active than the summer ones,
 up to April, we consider the months to be winter months since the day is still short. The graphs shows that 2019 was mor active than 2018 in terms of electric energy consumption. 
+
 
 ![Figure_1](https://user-images.githubusercontent.com/47668423/102064320-725f5980-3df7-11eb-9b7f-32f0a26f4988.png)
 
@@ -62,6 +64,7 @@ Figure 3. showing active Kwh behaviour during the da in December.
 #Light bulb electric energy consumption increases most during Midday, which shows tht arround 15:40 or earlier it gets darker.
 #People are determined to switch lights on more often.
 
+
 ![fixed corr](https://user-images.githubusercontent.com/47668423/102065176-8192d700-3df8-11eb-9b27-ca79a70d9fb8.png)
 
 Figure 4. showing electric energy consumption correlations 
@@ -69,6 +72,7 @@ Figure 4. showing electric energy consumption correlations
 The correlations are not so strong however they are to be considered when taking decisions. 
 There is a correlations between Room household and Actve Kwh per month - 1 which confirms that the larger the number of rooms the higher the consumption.
 The same correlation could be found between Kwh and Room Household. 
+
 
 
 
