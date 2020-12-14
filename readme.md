@@ -41,12 +41,18 @@ so we can help them take better decisions in their wish to optimize electri cons
 # Part I - electric energy behaviour 
 
 
+![dist](https://user-images.githubusercontent.com/47668423/102016514-bd2e9200-3d61-11eb-82a8-4769a9ea3bac.png)
+
+Figure 1. showing Active Kwh per month distributed across the four seasons for 1-5 room households. 
+
+#The graph shows that Active Kwh per month increases along with the number of rooms in households, and it becomes higher for autumn and winter seasons. 
+
+
 
 # Energy plots
 
 <img width="188" alt="agg kwh" src="https://user-images.githubusercontent.com/47668423/102016513-bacc3800-3d61-11eb-87df-ca8f521a2912.png">
 
-![dist](https://user-images.githubusercontent.com/47668423/102016514-bd2e9200-3d61-11eb-82a8-4769a9ea3bac.png)
 
 ![Figure_3](https://user-images.githubusercontent.com/47668423/102016515-bdc72880-3d61-11eb-8ced-449996cfa0f6.png)
 
