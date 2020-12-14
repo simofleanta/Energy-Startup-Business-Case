@@ -154,11 +154,11 @@ February and January are most profitable.
 
 
 # Part III - soon 
--code beautify
--add thir part
--add info for 
--regplot
+
 -decisions
+-add third part
+-regplot
+
 
  
 
