@@ -32,13 +32,13 @@ so we can help them take better decisions in their wish to optimize electri cons
 #price = 97.2 kWh × .50
 #kWh = 48.6
 
-#The analysis wil take part in three stages
+# The analysis wil take part in three stages
 #-part I - Active Kwt behaviour 
 #-part II - economic startup context 
 #-part III - Costs and investment analysis coming soon. 
 
 
-# Part I - electric energy 
+# Part I - electric energy behaviour 
 
 
 
