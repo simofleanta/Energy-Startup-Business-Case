@@ -34,16 +34,20 @@ print(df.head(800))
 opperational=df
 df = px.data.tips()
 fig = px.pie(opperational, values='Monthly_costs', names='General_Expenditures', color_discrete_sequence=px.colors.sequential.RdBu)
+#plotly.offline.plot(fig, filename='kwt')
 
 
 #1.staff
 #2.Marketing 
 #R&D
 
+opps=pd.read_csv('Emps.csv')
+print(opp.columns)
+dfs=DataFrame(opps.head(800))
+print(dfs.head(800))
 
-Employees=df['Emps']
-print(Employees)
-
+x=pd.merge(df,dfs)
+print(x)
 
 
 
