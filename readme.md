@@ -74,12 +74,13 @@ There is a correlations between Room household and Actve Kwh per month - 1 which
 The same correlation could be found between Kwh and Room Household. 
 
 
-![client region](https://user-images.githubusercontent.com/47668423/102068430-b43ece80-3dfc-11eb-857a-8957235efe18.png)
+![Client](https://user-images.githubusercontent.com/47668423/102069460-1ba94e00-3dfe-11eb-96ef-21d97ee0cb20.png)
 
 Figure 5. showing energy consumption in 1-5 rooms households, across different client regions. 
 
-Came out that Aarhus and Berlin have most 4 room household than other regions. Therefore consumption will be highest in Berlin and Aarhus. 
-The lowes consumption are Groningen and Hague. 
+Came out that Luxembourg and Hgue have most 5 room household than other regions. Therefore consumption will be highest in Luxembourg in Hague. 
+The lowes consumption are Berlin and Groningen. 
+
 
 
 
