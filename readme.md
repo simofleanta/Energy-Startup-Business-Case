@@ -119,6 +119,11 @@ Also there is a correlation between return of investment and rooms.
 
 ![sales_kwh](https://user-images.githubusercontent.com/47668423/102016638-3201cc00-3d62-11eb-8317-03d12b2127f4.png)
 
+Figure 4. showing the relationship between sales revenue and KwH per month consumption. 
+
+This shows that there is a around 80 KwH per month consumptin at a over 45000 euro sales revenue. 
+For over 90 KwH per month consumption sales revenue. may reach over 50000 euro. 
+
 ![Sales_room distribution](https://user-images.githubusercontent.com/47668423/102016639-329a6280-3d62-11eb-9a59-10e6ef103f80.png)
 
 
