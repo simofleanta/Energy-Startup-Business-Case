@@ -155,7 +155,35 @@ February and January are most profitable.
 
 # Part III - soon 
 
--decisions
+
+
+
+
+
+
+# Conclusions 
+
+The app is supposed enable clients better monitor their light electric energy consumption and therefore optimize household costs. 
+It came out that sales revenues of the startup rise from people with 5 room who therefore are more likely to consume more electricity. This shows a need of people to optimize their high costs. 
+Electric cnsumption increases along with the season and months, suggesting that days shorten whch shows a need to switch on lights, more ofter. According to the 
+Household rooms, there are a numner of lightbulbs which determine a  specfic energy consumption behaviour. 
+The correlations between household rooms and electric consumption and between profitability and consumption although weak, they are worth looking at and acte upon:
+
+# General Suggestions
+
+focus sales in regions having more room households
+focus sales during autumn and winter because this is when people need to optimize energy costs. 
+In order to optimize costs, it ok to recommend a specific light bulb for larger households.
+The graphs show lower sales scores in 2018 compared to 2019, this sugggest that the use of app increase in 2019 by people having larger households. Although 5 rooms were not 
+so many units but the consumption and need was high enough to compensate the previous year. 
+
+
+# Product design sugesstions 
+It may be possible to desigh a light bulb, linked to the app that allows clients using the app, to better focus on saving energy. 
+Design a device that automates 
+lights withches on and off according to the day's lighting midday dark or smth. 
+
+
 -add third part
 -regplot
 
