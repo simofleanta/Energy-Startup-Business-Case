@@ -90,6 +90,20 @@ This shows that 2019 was most active in terms of consumption but Hague and Luxem
 
 
 
+# Part II
+
+# Business Analysis plots
+
+
+![Money](https://user-images.githubusercontent.com/47668423/102071967-8019dc80-3e01-11eb-8396-04f5723b7aed.png)
+
+
+Fig 1. showing where the sales revenue increase from. 
+Sales Revenue increase from Luxembourg and Hague; where the consumption is higher and number of rooms is 4-5.  
+
+
+
+
 
 # Energy plots
 
