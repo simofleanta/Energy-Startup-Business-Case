@@ -175,6 +175,9 @@ February and January are most profitable.
 |   9 |   2019 | Jan     | Staff_transport   
 
 
+
+
+
 #Who is best paid in the startup?
 
 <img width="779" alt="employees" src="https://user-images.githubusercontent.com/47668423/102113585-7f9d3800-3e39-11eb-9137-8e423cdfb793.png">
