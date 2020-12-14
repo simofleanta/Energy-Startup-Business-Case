@@ -17,10 +17,14 @@ from sklearn.metrics import r2_score
 import plotly.express as px
 
 #open file the energy file
-opp=pd.read_csv('Emps.csv')
+opp=pd.read_csv('staff.csv')
 print(opp.columns)
 df=DataFrame(opp.head(800))
-print(df.head(800))
+print(df.head(5))
+
+
+print(df.to_markdown())
+
 
 
 
