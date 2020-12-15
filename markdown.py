@@ -22,8 +22,22 @@ print(opp.columns)
 df=DataFrame(opp.head(800))
 print(df.head(5))
 
+#print(df.to_markdown())
 
-print(df.to_markdown())
+s=pd.read_csv('energy_startup.csv')
+print(s.columns)
+df=DataFrame(s.head(800))
+print(df.head(700))
+
+#unique client region
+unique_region=df.Client_Region.unique()
+
+#what were top sales revenue generating products? top room household and region
+#geeration by revenue generation
+
+toprev=df.groupby(['Client_Room_household','Client_Region']).sum().round(2).sort_values(['Sales_rev'], ascending=False)
+print(toprev.head(10))
+
 
 
 
