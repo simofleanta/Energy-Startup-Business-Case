@@ -179,19 +179,13 @@ February and January are most profitable.
 #Lawyers
 #BI
 
-# Top sales revenue generated 
+# Top sales revenue generated; top selling country
 
-Room_household Kwh  Client_Region
-4              3.12 Hague          6496959   14994000       8397500          301298.4
-3              2.73 Berlin         5059614   14755500       9581800          205241.4
-2              2.34 Luxembourg     6150438   14288000       8132600          213899.4
-1              1.95 Aarhus         4694175    9445000       4746350          136012.5
-5              3.51 Hague          1833252    6457500       4567650           95612.4
-4              3.12 Luxembourg      843722    4336000       3503700           39124.8
-5              3.51 Luxembourg     1639428    3526000       1882000           85503.6
-2              2.34 Hague           888140    2244000       1348600           30888.0
-3              2.73 Aarhus          355344    1133000        742500           14414.4
-1              1.95 Hague           444180     930000        483000           12870.0
+<img width="788" alt="Focus on Hague" src="https://user-images.githubusercontent.com/47668423/102235742-f1858800-3ef2-11eb-9de7-d05f581fb3b0.png">
+
+Figure 1. Showing top 10 sales by country
+
+Focus app sales on Hague.
 
 
 # Conclusions 

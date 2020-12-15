@@ -95,11 +95,20 @@ print(z_merge)
 #what were top sales revenue generating products? top room household and region
 #geeration by revenue generation
 
-toprev=z_merge.groupby(['Room_household','Kwh','Client_Region']).sum().round(2).sort_values(['Sales_rev'], ascending=False)
+
+startup=pd.read_csv('energy_startup.csv')
+print(startup.columns)
+sdf=DataFrame(startup.head(700))
+print(sdf.head(700))
+
+toprev=sdf.groupby(['Client_Room_household','Client_Region']).sum().round(2).sort_values(['Sales_rev'], ascending=False)
 print(toprev.head(10))
 
-t=(toprev.to_markdown())
-print(t)
+
+
+
+
+
 
 
 

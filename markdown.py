@@ -38,6 +38,10 @@ unique_region=df.Client_Region.unique()
 toprev=df.groupby(['Client_Room_household','Client_Region']).sum().round(2).sort_values(['Sales_rev'], ascending=False)
 print(toprev.head(10))
 
+toprev=df
+df = px.data.tips()
+fig = px.pie(toprev, values='Sale_frequency', names='Client_Region', color_discrete_sequence=px.colors.sequential.RdBu)
+plotly.offline.plot(fig, filename='kwt')
 
 
 
