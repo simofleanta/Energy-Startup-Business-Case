@@ -50,11 +50,11 @@ print(z_merge)
 
 December=z_merge[z_merge.Month=='Dec']
 Decemberd=df[df.Month=='Dec']
-p=sns.stripplot(z_merge.Sales_rev,z_merge.Season, size=3.5, alpha=0.4);
-plt.show()
+#p=sns.stripplot(z_merge.Sales_rev,z_merge.Season, size=3.5, alpha=0.4);
+#plt.show()
 
 #sp=sns.stripplot(z_merge.Sales_rev,z_merge.Client_Region, size=3.5, alpha=0.4);
-p#lt.show()
+#plt.show()
 
 """sp=sns.stripplot(z_merge.Room_household, z_merge.Sales_rev, jitter=True,  size=3.5, alpha=0.4)
 
