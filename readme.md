@@ -187,7 +187,6 @@ Figure 1. Showing top 10 sales by country
 
 Focus app sales on Hague.
 
-
 # Conclusions 
 
 The app is supposed enable clients better monitor their light electric energy consumption and therefore optimize household costs. 
