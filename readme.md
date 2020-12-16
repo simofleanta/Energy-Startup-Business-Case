@@ -32,9 +32,9 @@ Anlyzing the KwH behaviour accross the units, regions and seasonality, may help 
 #kWh = 48.6
 
 # The analysis wil take part in three stages
-#-part I - Active Kwt behaviour 
-#-part II - economic startup context 
-#-part III - Costs and investment analysis coming soon. 
+#-part I - Active KwH behaviour 
+#-part II - Startup context 
+#-part III - Opperational costs.
 
 
 # Part I - electric energy behaviour 
@@ -50,23 +50,22 @@ Figure 1. showing Active Kwh per month distributed across the four seasons for 1
 
 ![Month](https://user-images.githubusercontent.com/47668423/102016528-c15aaf80-3d61-11eb-90be-c3579faf2ab6.png)
 
-Figure 2. showing KwH distributed across months for 2018 and 2019. 
+Figure 2. Showing KwH distributed across months for 2018 and 2019. 
 
-#Since electric energy onsumption increases in autumn and winter, in this graphs can be observed that winter months are more active than the summer ones,
-up to April, we consider the months to be winter months since the day is still short. The graphs shows that 2019 was mor active than 2018 in terms of electric energy consumption. 
+Since electric energy onsumption increases in autumn and winter, in this graphs can be observed that winter months are more active than the summer ones, up to April, we consider the months to be winter months since the day is still short. The graphs shows that 2019 was more active than 2018 in terms of electric energy consumption. 
 
 
 ![Figure_1](https://user-images.githubusercontent.com/47668423/102064320-725f5980-3df7-11eb-9b7f-32f0a26f4988.png)
 
-Figure 3. showing active Kwh behaviour during the da in December. 
+Figure 3. Showing active Kwh behaviour during the da in December. 
 
-#Light bulb electric energy consumption increases most during Midday, which shows tht arround 15:40 or earlier it gets darker.
-#People are determined to switch lights on more often.
+Light bulb electric energy consumption increases most during Midday, which shows tht arround 15:40 or earlier it gets darker.
+People are determined to switch lights on more often.
 
 
 ![fixed corr](https://user-images.githubusercontent.com/47668423/102065176-8192d700-3df8-11eb-9b27-ca79a70d9fb8.png)
 
-Figure 4. showing electric energy consumption correlations 
+Figure 4. Showing electric energy consumption correlations 
 
 The correlations are not so strong however they are to be considered when taking decisions. 
 There is a correlations between Room household and Actve Kwh per month - 1 which confirms that the larger the number of rooms the higher the consumption.
@@ -75,7 +74,7 @@ The same correlation could be found between Kwh and Room Household.
 
 ![Client](https://user-images.githubusercontent.com/47668423/102069460-1ba94e00-3dfe-11eb-96ef-21d97ee0cb20.png)
 
-Figure 5. showing energy consumption in 1-5 rooms households, across different client regions. 
+Figure 5. Showing energy consumption in 1-5 rooms households, across different client regions. 
 
 Came out that Luxembourg and Hgue have most 5 room household than other regions. Therefore consumption will be highest in Luxembourg in Hague. 
 The lowes consumption are Berlin and Groningen. 
@@ -97,20 +96,20 @@ This shows that 2019 was most active in terms of consumption but Hague and Luxem
 ![Money](https://user-images.githubusercontent.com/47668423/102071967-8019dc80-3e01-11eb-8396-04f5723b7aed.png)
 
 
-Fig 1. showing where the sales revenue increase from. 
+Fig 1. Showing where the sales revenue increase from. 
 
 Sales Revenue increase from Luxembourg and Hague; where the consumption is higher and number of rooms is 4-5. 
 
 
 ![Lux](https://user-images.githubusercontent.com/47668423/102073155-2e725180-3e03-11eb-8126-23bd093dd3f0.png)
 
-Figure 2. showing sales revenue benchamrk across regions. 
+Figure 2. Showing sales revenue benchamrk across regions. 
 
 Luxembourg had a higher sale revenue in 2018, over 40000 but in 2019, Berlin over passes Luxembourg with over 40000. In 2019 Groningen reached a sale revenue of 60000 euro. 
 
 ![Figure_7](https://user-images.githubusercontent.com/47668423/102016583-ed763080-3d61-11eb-835c-823fa21022e5.png)
 
-Figure 3. showing correlations between sales revenue and room households. 
+Figure 3. Showing correlations between sales revenue and room households. 
 
 There is  a weak but significant correlation between sales revenue and room household. 
 Also there is a correlation between return of investment and rooms.
@@ -118,14 +117,14 @@ Also there is a correlation between return of investment and rooms.
 
 ![sales_kwh](https://user-images.githubusercontent.com/47668423/102016638-3201cc00-3d62-11eb-8317-03d12b2127f4.png)
 
-Figure 4. showing the relationship between sales revenue and KwH per month consumption. 
+Figure 4. Showing the relationship between sales revenue and KwH per month consumption. 
 
 This shows that there is a around 80 KwH per month consumptin at a over 45000 euro sales revenue. 
 For over 90 KwH per month consumption sales revenue. may reach over 50000 euro. 
 
 ![Room per year](https://user-images.githubusercontent.com/47668423/102076333-dab63700-3e07-11eb-8582-ceac655bc9c9.png)
 
-Fig 5. showing revenues distributed across rooms household.
+Fig 5. Showing revenues distributed across rooms household.
 
 It is clear that revenue increases with consumtion and household room nuber.
 In this figure 5 room households bring over 60000 sales revenue. And therefore a higher profitability too. 
@@ -133,27 +132,27 @@ In this figure 5 room households bring over 60000 sales revenue. And therefore a
 
 ![sum](https://user-images.githubusercontent.com/47668423/102079077-4dc1ac80-3e0c-11eb-81bf-04822334739c.png)
 
-Figure 6. showing sum of sales_revenues across months and the room household distribution. 
+Figure 6. Showing sum of sales_revenues across months and the room household distribution. 
 
 3 room households bring more sales revenue and in autumn months. 
 
 ![Mean](https://user-images.githubusercontent.com/47668423/102079310-bf99f600-3e0c-11eb-8e73-d998088051df.png)
 
-Figure 7. showing mean of sales_revenues across weekdays and the room household distribution. 
+Figure 7. Showing mean of sales_revenues across weekdays and the room household distribution. 
 
 Beginning of the week seems more profitable. 
 
 
 ![Winter_M](https://user-images.githubusercontent.com/47668423/102080399-a98d3500-3e0e-11eb-9ff7-adb52c4e2264.png)
 
-Figure 8. showing mean of sales_revenues across months and the room household distribution. 
+Figure 8. Showing mean of sales_revenues across months and the room household distribution. 
 
 February and January are most profitable. 
 
 
 
 # Part III - Operational Costs
-#Where the money is mostly invested on?
+#Where is the money mostly invested on?
 
 <img width="807" alt="operational costs" src="https://user-images.githubusercontent.com/47668423/102113314-2e8d4400-3e39-11eb-861b-bffba0301ff9.png">
 
@@ -176,7 +175,7 @@ February and January are most profitable.
 | External_collaborators           | 147350 |   175200        |
 
 
-#Who is best paid in the startup?
+Who is best paid in the startup?
 
 <img width="779" alt="employees" src="https://user-images.githubusercontent.com/47668423/102113585-7f9d3800-3e39-11eb-9137-8e423cdfb793.png">
 
@@ -213,10 +212,10 @@ Focus app sales on Hague and 4 and five room units
 
 # Conclusions 
 
-The app is supposed enable clients better monitor their light electric energy consumption and therefore optimize household costs. 
-It came out that sales revenues of the startup rise from people with 5 room who therefore are more likely to consume more electricity. This shows a need of people to optimize their high costs. 
+The app is supposed to enable clients better monitor their light electric energy consumption and therefore optimize household costs. 
+It came out that sales revenues of the startup rise from people with 4- 5 room who therefore are more likely to consume more electricity. This shows a need of people to optimize their high costs. 
 Electric cnsumption increases along with the season and months, suggesting that days shorten whch shows a need to switch on lights, more ofter. According to the 
-Household rooms, there are a numner of lightbulbs which determine a  specfic energy consumption behaviour. 
+Household rooms, there are a numner of lightbulbs which determine a specfic energy consumption behaviour. 
 The correlations between household rooms and electric consumption and between profitability and consumption although weak, they are worth looking at and acte upon:
 Also the money goes mostly into Staff marketing, and R&D, this shows the development of the business.
 Software engineer is best paid, along with BI. this shows a potential development and innovation in the electric energy.
@@ -234,7 +233,7 @@ As a startup it could be a beehive for graduates that could bring new ideas to t
 # Product design sugesstions 
 It may be possible to desigh a light bulb, linked to the app that allows clients using the app, to better focus on saving energy. 
 Design a device that automates 
-lights withches on and off according to the day's lighting midday dark or smth. 
+lights swithches on and off according to the day's lighting midday dark or similar. 
 
 
 
