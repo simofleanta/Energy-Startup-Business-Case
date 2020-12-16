@@ -189,13 +189,13 @@ Focus app sales on Hague and 4 and five room units
 
 
 
-|   Client_Region   | Number_clients | Costs | Sale_frequency   | Sales_rev | 
-|:------------------|:-------------- |:------|:---------------- |:-------   |
-| (4, 'Hague')      | 1800           |351850 |           1946   |  973000   |   
-| (1, 'Aarhus')     | 1811           |363300 |           1811   |  905500   |
-| (2, 'Luxembourg') | 1770           |371550 |           1770   |  885000   |       
-| (3, 'Berlin')     | 1714           |385400 |           1714   |  857000   |
-| (5, 'Groningen')  |  83            |22450  |             83   |  41500    | 
+|   Client_Region   | Number_clients | Costs | Sales_rev | 
+|:------------------|:-------------- |:------|:--------- |
+| (4, 'Hague')      | 1800           |351850 |  973000   |   
+| (1, 'Aarhus')     | 1811           |363300 |  905500   |
+| (2, 'Luxembourg') | 1770           |371550 |  885000   |       
+| (3, 'Berlin')     | 1714           |385400 |  857000   |
+| (5, 'Groningen')  |  83            |22450  |  41500    | 
 
 
 # Conclusions 
