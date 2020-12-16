@@ -30,8 +30,6 @@ print(topcost.head(5))
 print(topcost.to_markdown())
 
 
-
-
 s=pd.read_csv('energy_startup.csv')
 print(s.columns)
 df=DataFrame(s.head(800))
