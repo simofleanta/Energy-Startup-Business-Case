@@ -22,7 +22,15 @@ print(opp.columns)
 df=DataFrame(opp.head(800))
 print(df.head(5))
 
-#print(df.to_markdown())
+
+
+topcost=df.groupby(['General_Expenditures']).sum().round(2).sort_values(['Monthly_costs'], ascending=False)
+print(topcost.head(5))
+
+print(topcost.to_markdown())
+
+
+
 
 s=pd.read_csv('energy_startup.csv')
 print(s.columns)

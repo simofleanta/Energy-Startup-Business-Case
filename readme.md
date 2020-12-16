@@ -163,6 +163,20 @@ February and January are most profitable.
 #R&D
 
 
+| General_Expenditures             |   Year |   Monthly_costs |
+|:---------------------------------|:-------|:----------------|
+| Staff                            | 147351 |   1.46e+06      |
+| Marketing_web                    | 149369 |   740000        |
+| R&D                              | 147351 |   730000        |
+| External_collaborators_transport | 147350 |   365000        |
+| Licenses                         | 147350 |   365000        |
+| Meetings                         | 147351 |   365000        |
+| Staff_transport                  | 147350 |   365000        |
+| Office_utilities                 | 147351 |   328500        |
+| Banking                          | 147350 |   175200        |
+| External_collaborators           | 147350 |   175200        |
+
+
 #Who is best paid in the startup?
 
 <img width="779" alt="employees" src="https://user-images.githubusercontent.com/47668423/102113585-7f9d3800-3e39-11eb-9137-8e423cdfb793.png">
