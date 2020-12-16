@@ -213,10 +213,10 @@ Focus app sales on Hague and 4 and five room units
 # Conclusions 
 
 The app is supposed to enable clients better monitor their light electric energy consumption and therefore optimize household costs. 
-It came out that sales revenues of the startup rise from people with 4- 5 room who therefore are more likely to consume more electricity. This shows a need of people to optimize their high costs. 
+It came out that sales revenues of the startup rise from people with 4-5 room who therefore are more likely to consume more electricity. This shows a need of people to optimize their high costs. 
 Electric cnsumption increases along with the season and months, suggesting that days shorten whch shows a need to switch on lights, more ofter. According to the 
 Household rooms, there are a numner of lightbulbs which determine a specfic energy consumption behaviour. 
-The correlations between household rooms and electric consumption and between profitability and consumption although weak, they are worth looking at and acte upon:
+The correlations between household rooms and electric consumption and between profitability and consumption although weak, they are worth looking at and act upon:
 Also the money goes mostly into Staff marketing, and R&D, this shows the development of the business.
 Software engineer is best paid, along with BI. this shows a potential development and innovation in the electric energy.
 
@@ -225,8 +225,7 @@ Software engineer is best paid, along with BI. this shows a potential developmen
 focus sales in regions having more room households
 focus sales during autumn and winter because this is when people need to optimize energy costs. 
 In order to optimize costs, it ok to recommend a specific light bulb for larger households.
-The graphs show lower sales scores in 2018 compared to 2019, this sugggest that the use of app increase in 2019 by people having larger households. Although 5 rooms were not 
-so many units but the consumption and need was high enough to compensate the previous year. 
+The graphs show lower sales scores in 2018 compared to 2019, this sugggest that the use of app increase in 2019 by people having larger households. Although 5 rooms were not so many units but the consumption and need was high enough to compensate the previous year. 
 As a startup it could be a beehive for graduates that could bring new ideas to the de development of the startup and bring new investment opportunities. 
 
 
