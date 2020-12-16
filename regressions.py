@@ -48,8 +48,10 @@ print(rdf.columns)
 
 for_regressions=df
 df = px.data.tips()
-fig = px.scatter(for_regressions, x="Month_Profit", y="Costs", trendline="m")
-#plotly.offline.plot(fig, filename='m')
+fig = px.scatter(for_regressions, x="Month_Profit", y="Sales_rev", trendline="m")
+plotly.offline.plot(fig, filename='m')
+
+
 
 
 

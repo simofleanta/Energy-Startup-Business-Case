@@ -210,10 +210,11 @@ Focus app sales on Hague and 4 and five room units
 | (5, 'Groningen')       |  83            |22450  |  41500    | 
 
 
-# Part IV Regressions 
+# Part IV regressions charts
 
 <img width="890" alt="reg" src="https://user-images.githubusercontent.com/47668423/102341158-b6896000-3f97-11eb-886c-0b7281680a1a.png">
 
+<img width="925" alt="kwh trend" src="https://user-images.githubusercontent.com/47668423/102342713-ed607580-3f99-11eb-9f19-6c3802b99d12.png">
 
 
 # Conclusions 

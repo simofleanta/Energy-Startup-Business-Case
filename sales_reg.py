@@ -23,7 +23,9 @@ print(salesdf)
 
 
 df = px.data.tips()
-fig = px.scatter(salesdf, x="Sales_rev", y="Active_kwh_month", trendline="ols")
+fig = px.scatter(salesdf, x="Room_household", y="Kwh", trendline="ols")
 plotly.offline.plot(fig, filename='m')
+
+
 
 
