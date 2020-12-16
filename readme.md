@@ -210,6 +210,12 @@ Focus app sales on Hague and 4 and five room units
 | (5, 'Groningen')       |  83            |22450  |  41500    | 
 
 
+# Part IV Regressions 
+
+<img width="890" alt="reg" src="https://user-images.githubusercontent.com/47668423/102341158-b6896000-3f97-11eb-886c-0b7281680a1a.png">
+
+
+
 # Conclusions 
 
 The app is supposed to enable clients better monitor their light electric energy consumption and therefore optimize household costs. 
